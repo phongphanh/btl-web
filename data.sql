@@ -120,6 +120,14 @@ Create table [TaiKhoan]
 	[TrangThaiTK] Integer NOT NULL,
 Primary Key ([ID_TK])
 ) 
+
+Alter table [Xe] add  foreign key([ID_Hang]) references [HangXe] ([ID_Hang])  on update no action on delete no action 
+go
+Alter table [DonHang] add  foreign key([ID_Xe]) references [Xe] ([ID_Xe])  on update no action on delete no action 
+go
+Alter table [DonHang] add  foreign key([ID_TK]) references [TaiKhoan] ([ID_TK])  on update no action on delete no action 
+go
+
 go
 SET IDENTITY_INSERT [dbo].[HangXe] ON 
 INSERT [dbo].[HangXe] ([ID_Hang], [TenHang], [Logo]) VALUES (1, N'Toyota', N'image\Logo\toyota.jpg')
@@ -160,13 +168,6 @@ INSERT [dbo].[HangXe] ([ID_Hang], [TenHang], [Logo]) VALUES (35, N'UAZ', N'image
 INSERT [dbo].[HangXe] ([ID_Hang], [TenHang], [Logo]) VALUES (36, N'Volkswagen', N'image\Logo\Volkswagen-.jpg')
 INSERT [dbo].[HangXe] ([ID_Hang], [TenHang], [Logo]) VALUES (37, N'Volvo', N'image\Logo\Volvo-.jpg')
 SET IDENTITY_INSERT [dbo].[HangXe] OFF
-
-Alter table [Xe] add  foreign key([ID_Hang]) references [HangXe] ([ID_Hang])  on update no action on delete no action 
-go
-Alter table [DonHang] add  foreign key([ID_Xe]) references [Xe] ([ID_Xe])  on update no action on delete no action 
-go
-Alter table [DonHang] add  foreign key([ID_TK]) references [TaiKhoan] ([ID_TK])  on update no action on delete no action 
-go
 
 
 Set quoted_identifier on
