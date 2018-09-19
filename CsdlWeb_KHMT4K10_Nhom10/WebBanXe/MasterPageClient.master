@@ -1,0 +1,196 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageClient.master.cs" Inherits="MasterPageClient" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i&amp;subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="wrapper">
+            <header id="header" class="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="logo-site">
+                            <asp:LinkButton ID="logo" PostBackUrl="~/WebBanXe/Home.aspx" runat="server">
+                                <asp:Image ImageUrl="image/system/logo.svg" runat="server" />
+                            </asp:LinkButton>
+                        </div>
+                        <div class="banner-site">
+                            <asp:Image ImageUrl="https://via.placeholder.com/750x90?text=banner" runat="server" />
+                        </div>
+                    </div>
+                </div>
+
+                <nav id="main-menu">
+                    <div class="container">
+                        <ul class="list-inline menu">
+                            <li>
+                                <asp:LinkButton ID="LinkButton1" runat="server">Trang chủ</asp:LinkButton></li>
+                            <li>
+                                <asp:LinkButton ID="LinkButton2" runat="server">Hãng</asp:LinkButton></li>
+                            <li>
+                                <asp:LinkButton ID="LinkButton3" runat="server">Bảng giá</asp:LinkButton></li>
+                            <li>
+                                <asp:LinkButton ID="LinkButton4" runat="server">Trang tin</asp:LinkButton></li>
+                            <li>
+                                <asp:LinkButton ID="LinkButton5" runat="server">Liên hệ</asp:LinkButton></li>
+                            <li>
+                                <asp:LinkButton ID="LinkButton6" runat="server">Tài khoản</asp:LinkButton></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <main id="content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </main>
+            <footer id="footer" class="footer">
+                <div class=" footer-top">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-25">
+                                <h3>
+                                    <asp:LinkButton runat="server">XE TOYOTA</asp:LinkButton></h3>
+                                <ul>
+                                    <li>
+                                        <asp:LinkButton PostBackUrl="#" runat="server">Xe Toyota Camry</asp:LinkButton></li>
+                                    <li>
+                                        <asp:LinkButton runat="server">Xe Toyota Vios</asp:LinkButton></li>
+                                    <li>
+                                        <asp:LinkButton runat="server">Xe Toyota Innova</asp:LinkButton></li>
+                                    <li>
+                                        <asp:LinkButton runat="server">Xe Toyota Altis</asp:LinkButton></li>
+                                </ul>
+                            </div>
+                            <div class="col-25">
+                                <h3>
+                                    <asp:LinkButton runat="server">XE KIA</asp:LinkButton></h3>
+                                <ul>
+                                    <li>
+                                        <asp:LinkButton PostBackUrl="#" runat="server">Xe kia Morning</asp:LinkButton></li>
+                                    <li>
+                                        <asp:LinkButton runat="server">Xe kia Carens</asp:LinkButton></li>
+                                    <li>
+                                        <asp:LinkButton runat="server">Xe kia Cerato</asp:LinkButton></li>
+                                    <li>
+                                        <asp:LinkButton runat="server">Xe kia Sorento</asp:LinkButton></li>
+                                </ul>
+                            </div>
+                            <div class="col-25">
+                                <h3>
+                                    <asp:LinkButton runat="server">XE HUYNDAI</asp:LinkButton></h3>
+                                <ul>
+                                    <li>
+                                        <asp:LinkButton PostBackUrl="#" runat="server">Xe Huyndai Grand i10</asp:LinkButton></li>
+                                    <li>
+                                        <asp:LinkButton runat="server">Xe Huyndai Accent</asp:LinkButton></li>
+                                    <li>
+                                        <asp:LinkButton runat="server">Xe Huyndai Santa Fe</asp:LinkButton></li>
+                                    <li>
+                                        <asp:LinkButton runat="server">Xe Huyndai Elantra</asp:LinkButton></li>
+                                </ul>
+                            </div>
+                            <div class="col-25">
+                                <h3>
+                                    <asp:LinkButton runat="server">XE MAZDA</asp:LinkButton></h3>
+                                <ul>
+                                    <li>
+                                        <asp:LinkButton PostBackUrl="#" runat="server">Xe Mazda 3</asp:LinkButton></li>
+                                    <li>
+                                        <asp:LinkButton runat="server">Xe Mazda CX9</asp:LinkButton></li>
+                                    <li>
+                                        <asp:LinkButton runat="server">Xe Mazda BT50</asp:LinkButton></li>
+                                    <li>
+                                        <asp:LinkButton runat="server">Xe Mazda CX5</asp:LinkButton></li>
+                                </ul>
+                            </div>
+                            <div class="col-25">
+                                <h3>
+                                    <asp:LinkButton runat="server">XE FORD</asp:LinkButton></h3>
+                                <ul>
+                                    <li>
+                                        <asp:LinkButton PostBackUrl="#" runat="server">Xe Ford Everest</asp:LinkButton></li>
+                                    <li>
+                                        <asp:LinkButton runat="server">Xe Ford Ecosport</asp:LinkButton></li>
+                                    <li>
+                                        <asp:LinkButton runat="server">Xe Ford Focus</asp:LinkButton></li>
+                                    <li>
+                                        <asp:LinkButton runat="server">Xe Ford Ranger</asp:LinkButton></li>
+                                </ul>
+                            </div>
+                            <div class="col-25">
+                                <h3>
+                                    <asp:LinkButton runat="server">XE HONDA</asp:LinkButton></h3>
+                                <ul>
+                                    <li>
+                                        <asp:LinkButton PostBackUrl="#" runat="server">Xe Honda City</asp:LinkButton></li>
+                                    <li>
+                                        <asp:LinkButton runat="server">Xe Honda Accord</asp:LinkButton></li>
+                                    <li>
+                                        <asp:LinkButton runat="server">Xe Honda CRV</asp:LinkButton></li>
+                                    <li>
+                                        <asp:LinkButton runat="server">Xe Honda Civic</asp:LinkButton></li>
+                                </ul>
+                            </div>
+                            <div class="col-25">
+                                <h3>
+                                    <asp:LinkButton runat="server">XE CHEVROLET</asp:LinkButton></h3>
+                                <ul>
+                                    <li>
+                                        <asp:LinkButton PostBackUrl="#" runat="server">Xe Chevrolet Cruze</asp:LinkButton></li>
+                                    <li>
+                                        <asp:LinkButton runat="server">Xe Toyota Vios</asp:LinkButton></li>
+                                    <li>
+                                        <asp:LinkButton runat="server">Xe Toyota Innova</asp:LinkButton></li>
+                                    <li>
+                                        <asp:LinkButton runat="server">Xe Toyota Altis</asp:LinkButton></li>
+                                </ul>
+                            </div>
+                            <div class="col-25">
+                                <h3>
+                                    <asp:LinkButton runat="server">XE TOYOTA</asp:LinkButton></h3>
+                                <ul>
+                                    <li>
+                                        <asp:LinkButton PostBackUrl="#" runat="server">Xe Toyota Camry</asp:LinkButton></li>
+                                    <li>
+                                        <asp:LinkButton runat="server">Xe Chevrolet Spark</asp:LinkButton></li>
+                                    <li>
+                                        <asp:LinkButton runat="server">Xe Chevrolet Aveo</asp:LinkButton></li>
+                                    <li>
+                                        <asp:LinkButton runat="server">Xe Chevrolet Captiva</asp:LinkButton></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-70">
+                                <p>Giấy phép số 011/GP-TTĐT - Sở thông tin và truyền thông TP. Hồ Chí Minh - Cấp ngày 26/01/2015. Người chịu trách nhiệm nội dung: Nguyễn Ngọc Vĩnh. Ghi rõ nguồn “OtoS.vn” khi bạn phát hành lại thông tin từ website này.</p>
+                                <p>OtoS không bán xe trực tiếp, quý khách mua xe vui lòng liên hệ trực tiếp người đăng tin.</p>
+                            </div>
+                            <div class="col-30">
+                                <h3>Đã đăng ký BTC</h3>
+                                <asp:Image ImageUrl="image/system/dkbct.svg" runat="server" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="container">
+                        <p>&copy; 2018 - Bản quyền của Công Ty Cổ Phần OtoS</p>
+                        <p>Tel: (84-28) 6686 4200 - Hotline: 0906 870 699 - Email: info@otos.vn - Address: 68 Nam Kỳ Khởi Nghĩa, Phường Nguyễn Thái Bình, Quận 1, Thành phố Hồ Chí Minh.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
