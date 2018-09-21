@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Otos</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i&amp;subset=vietnamese" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet" />
@@ -30,17 +30,113 @@
                     <div class="container">
                         <ul class="list-inline menu">
                             <li>
-                                <asp:LinkButton ID="LinkButton1" runat="server">Trang chủ</asp:LinkButton></li>
+                                <asp:LinkButton PostBackUrl="~/WebBanXe/Home.aspx" ID="LinkButton1" runat="server"><i class="fas fa-home"></i> Trang chủ</asp:LinkButton></li>
+                            <li class="list-hang">
+                                <asp:LinkButton ID="LinkButton2" runat="server">Hãng</asp:LinkButton>
+                                <div class="dropdown-menu-wrap">
+                                    <div class="submenu-2 submenu-item">
+                                        <h3>Tìm theo thương hiệu</h3>
+                                        <ul>
+                                            <li>
+                                                <asp:LinkButton PostBackUrl="~/WebBanXe/SanPham.aspx" ID="LinkButton8" runat="server">
+                                                    <img alt="Toyota" src="image/Logo/toyota.jpg" class="loaded"><span>Toyota</span>
+                                                </asp:LinkButton> 
+                                            </li>
+                                            <li>
+                                                <asp:LinkButton PostBackUrl="~/WebBanXe/SanPham.aspx" ID="LinkButton9" runat="server">
+                                                    <img alt="Ford" src="image/Logo/ford.jpg" class="loaded"><span>Ford</span>
+                                                </asp:LinkButton>
+                                            </li>
+                                            <li>
+                                                <asp:LinkButton PostBackUrl="~/WebBanXe/SanPham.aspx" ID="LinkButton10" runat="server">
+                                                    <img alt="Hyundai" src="image/Logo/hyundai.jpg" class="loaded"><span>Hyundai</span>
+                                                </asp:LinkButton>
+                                            </li>
+                                            <li>
+                                                <asp:LinkButton PostBackUrl="~/WebBanXe/SanPham.aspx" ID="LinkButton11" runat="server">
+                                                <img alt="Honda" src="image/Logo/honda.jpg" class="loaded"><span>Honda</span>
+                                                </asp:LinkButton>
+                                            </li>
+                                            <li>
+                                                <asp:LinkButton PostBackUrl="~/WebBanXe/SanPham.aspx" ID="LinkButton12" runat="server">
+                                                <img alt="Kia" src="image/Logo/kia.jpg" class="loaded"><span>Kia</span>
+
+                                                </asp:LinkButton>
+                                            </li>
+                                            <li>
+                                                <asp:LinkButton PostBackUrl="~/WebBanXe/SanPham.aspx" ID="LinkButton13" runat="server">
+                                                <img alt="Chevrolet" src="image/Logo/Chevrolet-.jpg" class="loaded"><span>Chevrolet</span>
+
+                                                </asp:LinkButton>
+                                            </li>
+                                            <li>
+                                                <asp:LinkButton PostBackUrl="~/WebBanXe/SanPham.aspx" ID="LinkButton14" runat="server">
+                                                <img alt="Mazda" src="image/Logo/Mazda.jpg" class="loaded"><span>Mazda</span>
+
+                                                </asp:LinkButton>
+                                            </li>
+                                            <li>
+                                                <asp:LinkButton PostBackUrl="~/WebBanXe/SanPham.aspx" ID="LinkButton15" runat="server">
+                                                <img alt="MercedesBenz" src="image/Logo/MercedesBenz.jpg" class="loaded"><span>MercedesBenz</span>
+
+                                                </asp:LinkButton>
+                                            </li>
+                                            <li>
+                                                <asp:LinkButton PostBackUrl="~/WebBanXe/SanPham.aspx" ID="LinkButton16" runat="server">
+                                                <img alt="Nissan" src="image/Logo/Nissan-.jpg" class="loaded"><span>Nissan</span>
+
+                                                </asp:LinkButton>
+                                            </li>
+                                            <li>
+                                                <asp:LinkButton PostBackUrl="~/WebBanXe/SanPham.aspx" ID="LinkButton17" runat="server">
+                                                <img alt="Audi" src="image/Logo/audi.jpg" class="loaded"><span>Audi</span> 
+
+                                                </asp:LinkButton>
+                                            </li>
+                                            <li>
+                                                <asp:LinkButton PostBackUrl="~/WebBanXe/SanPham.aspx" ID="LinkButton18" runat="server">
+                                                <img alt="BMW" src="image/Logo/bmw.jpg" class="loaded"><span>BMW</span> 
+
+                                                </asp:LinkButton>
+
+                                            </li>
+                                            <li>
+                                                <asp:LinkButton PostBackUrl="~/WebBanXe/SanPham.aspx" ID="LinkButton19" runat="server">
+                                                <img alt="Lexus" src="image/Logo/lexus.jpg" class="loaded"><span>Lexus</span>
+
+                                                </asp:LinkButton>
+                                            </li>
+                                            <li>
+                                                <asp:LinkButton PostBackUrl="~/WebBanXe/SanPham.aspx" ID="LinkButton20" runat="server">Xem tất cả</asp:LinkButton>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
                             <li>
-                                <asp:LinkButton ID="LinkButton2" runat="server">Hãng</asp:LinkButton></li>
-                            <li>
-                                <asp:LinkButton ID="LinkButton3" runat="server">Bảng giá</asp:LinkButton></li>
+                                <asp:LinkButton PostBackUrl="" ID="LinkButton3" runat="server">Bảng giá</asp:LinkButton></li>
                             <li>
                                 <asp:LinkButton ID="LinkButton4" runat="server">Trang tin</asp:LinkButton></li>
                             <li>
-                                <asp:LinkButton ID="LinkButton5" runat="server">Liên hệ</asp:LinkButton></li>
+                                <asp:LinkButton ID="LinkButton7" runat="server">Salon Ôtô</asp:LinkButton></li>
                             <li>
-                                <asp:LinkButton ID="LinkButton6" runat="server">Tài khoản</asp:LinkButton></li>
+                                <asp:LinkButton ID="LinkButton5" runat="server">Đăng xe bán</asp:LinkButton></li>
+                            <li>
+                                <asp:LinkButton ID="LinkButton6" runat="server"><i class="fas fa-user"></i> Tài khoản</asp:LinkButton>
+                                <ul class="acc-guest">
+                                    <li class="login-link">
+                                        <asp:LinkButton PostBackUrl="~/WebBanXe/DangNhap.aspx" ID="LinkButton21" runat="server">Đăng nhập</asp:LinkButton>
+                                    </li>
+                                    <li class="register-link">
+                                        <asp:LinkButton PostBackUrl="~/WebBanXe/DangKy.aspx" ID="LinkButton22" runat="server">Tạo tài khoản</asp:LinkButton></li>
+                                    <li class="login-fb-link"><a href="#"><i class="fab fa-facebook-f"></i> Đăng nhập bằng Facebook</a></li>
+                                    <li class="sp-guest">
+                                        <p>
+                                            Mọi vấn đề liên quan đến tài khoản, hãy gọi số <a href="tel:0906870699" title="Gọi đến: 0906 870 699">0906 870 699</a> để được hỗ trợ.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </nav>
