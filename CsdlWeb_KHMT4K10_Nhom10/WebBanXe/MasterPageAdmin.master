@@ -28,10 +28,10 @@
                         <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
                     </li>
                     <li class="nav-item d-none d-sm-inline-block">
-                        <a href="index3.html" class="nav-link">Home</a>
+                        <asp:LinkButton ID="LinkButton1" CssClass="nav-link" PostBackUrl="~/WebBanXe/admin/admin.aspx" runat="server">Home</asp:LinkButton>
                     </li>
                     <li class="nav-item d-none d-sm-inline-block">
-                        <a href="#" class="nav-link">Contact</a>
+                        <a href="#t" class="nav-link">Contact</a>
                     </li>
                 </ul>
 
@@ -59,7 +59,7 @@
                             <a href="#" class="dropdown-item">
                                 <!-- Message Start -->
                                 <div class="media">
-                                    <img src="/admin/image/user1-128x128.jpg" class="img-size-50 mr-3 img-circle"  alt="User Avatar" />
+                                    <asp:Image ID="Image2" ImageUrl="~/WebBanXe/admin/image/user1-128x128.jpg" class="img-size-50 mr-3 img-circle" runat="server" />
                                     <div class="media-body">
                                         <h3 class="dropdown-item-title">Brad Diesel
                   <span class="float-right text-sm text-danger"><i class="fa fa-star"></i></span>
@@ -74,7 +74,7 @@
                             <a href="#" class="dropdown-item">
                                 <!-- Message Start -->
                                 <div class="media">
-                                    <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                                    <asp:Image ID="Image3" ImageUrl="~/WebBanXe/admin/image/user8-128x128.jpg" class="img-size-50 img-circle mr-3" runat="server" />
                                     <div class="media-body">
                                         <h3 class="dropdown-item-title">John Pierce
                   <span class="float-right text-sm text-muted"><i class="fa fa-star"></i></span>
@@ -89,7 +89,7 @@
                             <a href="#" class="dropdown-item">
                                 <!-- Message Start -->
                                 <div class="media">
-                                    <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                                    <asp:Image ID="Image4" ImageUrl="~/WebBanXe/admin/image/user3-128x128.jpg" class="img-size-50 img-circle mr-3" runat="server" />
                                     <div class="media-body">
                                         <h3 class="dropdown-item-title">Nora Silvester
                   <span class="float-right text-sm text-warning"><i class="fa fa-star"></i></span>
@@ -142,20 +142,19 @@
             <!-- Main Sidebar Container -->
             <aside class="main-sidebar sidebar-dark-primary elevation-4">
                 <!-- Brand Logo -->
-                <a href="index3.html" class="brand-link">
+                <asp:LinkButton ID="LinkButton2" CssClass="brand-link" PostBackUrl="~/WebBanXe/admin/admin.aspx" runat="server">
                     <asp:Image ID="Image1" ImageUrl="~/WebBanXe/admin/image/AdminLTELogo.png" class="brand-image img-circle elevation-3" style="opacity: .8" runat="server" />
-                   <span class="brand-text font-weight-light">AdminLTE 3</span>
-                </a>
-
+                   <span class="brand-text font-weight-light">Admin</span>
+                </asp:LinkButton>
                 <!-- Sidebar -->
                 <div class="sidebar">
                     <!-- Sidebar user panel (optional) -->
                     <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                         <div class="image">
-                            <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                            <asp:Image ID="Image5" ImageUrl="~/WebBanXe/admin/image/user2-160x160.jpg"  class="img-circle elevation-2" runat="server" />
                         </div>
                         <div class="info">
-                            <a href="#" class="d-block">Alexander Pierce</a>
+                            <a href="#" class="d-block">Nhóm 10</a>
                         </div>
                     </div>
 
@@ -168,7 +167,7 @@
                                 <a href="#" class="nav-link active">
                                     <i class="nav-icon fa fa-dashboard"></i>
                                     <p>
-                                        Starter Pages
+                                        Dashboard
                 <i class="right fa fa-angle-left"></i>
                                     </p>
                                 </a>
@@ -176,13 +175,25 @@
                                     <li class="nav-item">
                                         <a href="#" class="nav-link active">
                                             <i class="fa fa-circle-o nav-icon"></i>
-                                            <p>Active Page</p>
+                                            <p>Quản Lý Hãng Xe</p>
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="#" class="nav-link">
                                             <i class="fa fa-circle-o nav-icon"></i>
-                                            <p>Inactive Page</p>
+                                            <p>Quản Lý Xe</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">
+                                            <i class="fa fa-circle-o nav-icon"></i>
+                                            <p>Quản Lý Đơn Hàng</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">
+                                            <i class="fa fa-circle-o nav-icon"></i>
+                                            <p>Quản Lý Tài Khoản</p>
                                         </a>
                                     </li>
                                 </ul>
@@ -191,7 +202,7 @@
                                 <a href="#" class="nav-link">
                                     <i class="nav-icon fa fa-th"></i>
                                     <p>
-                                        Simple Link
+                                        Thiết Lập
                 <span class="right badge badge-danger">New</span>
                                     </p>
                                 </a>
@@ -224,12 +235,12 @@
                     Anything you want
                 </div>
                 <!-- Default to the left -->
-                <strong>Copyright &copy; 2014-2018 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+                <strong>Copyright &copy; 2014-2018 <a href="#t">Nhóm 10</a>.</strong> All rights reserved.
             </footer>
         </div>
     </form>
-    <script src="admin/libs/jquery.min.js"></script>
-    <script src="admin/libs/bootstrap.bundle.min.js"></script>
-    <script src="admin/js/adminlte.min.js"></script>
+    <script src="/WebBanXe/admin/libs/jquery.min.js"></script>
+    <script src="/WebBanXe/admin/libs/bootstrap.bundle.min.js"></script>
+    <script src="/WebBanXe/admin/js/adminlte.min.js"></script>
 </body>
 </html>

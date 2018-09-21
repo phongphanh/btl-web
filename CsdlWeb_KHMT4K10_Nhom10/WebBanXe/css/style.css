@@ -64,6 +64,9 @@ p{
 /*-------------------custom---------------*/
 
 /*header*/
+header{
+    padding-top:15px;
+}
 .logo-site {
     float: left;
     width: 25%;
