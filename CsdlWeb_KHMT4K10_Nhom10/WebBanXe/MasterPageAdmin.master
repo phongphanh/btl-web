@@ -173,28 +173,28 @@
                                 </a>
                                 <ul class="nav nav-treeview">
                                     <li class="nav-item">
-                                        <a href="#" class="nav-link active">
+                                        <asp:LinkButton ID="nav_hang" PostBackUrl="~/WebBanXe/admin/QLHangXe.aspx" class="nav-link" runat="server">
                                             <i class="fa fa-circle-o nav-icon"></i>
                                             <p>Quản Lý Hãng Xe</p>
-                                        </a>
+                                        </asp:LinkButton>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#" class="nav-link">
+                                        <asp:LinkButton ID="nav_xe" PostBackUrl="~/WebBanXe/admin/QLXe.aspx" class="nav-link" runat="server">
                                             <i class="fa fa-circle-o nav-icon"></i>
                                             <p>Quản Lý Xe</p>
-                                        </a>
+                                        </asp:LinkButton>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#" class="nav-link">
+                                        <asp:LinkButton PostBackUrl="~/WebBanXe/admin/QLDonHang.aspx" ID="nav_order"  class="nav-link" runat="server">
                                             <i class="fa fa-circle-o nav-icon"></i>
                                             <p>Quản Lý Đơn Hàng</p>
-                                        </a>
+                                        </asp:LinkButton>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#" class="nav-link">
+                                        <asp:LinkButton PostBackUrl="~/WebBanXe/admin/QLTaiKhoan.aspx" ID="nav_tk" class="nav-link" runat="server">
                                             <i class="fa fa-circle-o nav-icon"></i>
                                             <p>Quản Lý Tài Khoản</p>
-                                        </a>
+                                        </asp:LinkButton>
                                     </li>
                                 </ul>
                             </li>
@@ -242,5 +242,8 @@
     <script src="/WebBanXe/admin/libs/jquery.min.js"></script>
     <script src="/WebBanXe/admin/libs/bootstrap.bundle.min.js"></script>
     <script src="/WebBanXe/admin/js/adminlte.min.js"></script>
+    <script src="/WebBanXe/admin/js/script.js"></script>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+    </asp:ContentPlaceHolder>
 </body>
 </html>

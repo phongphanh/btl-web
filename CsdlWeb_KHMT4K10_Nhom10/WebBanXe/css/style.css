@@ -61,6 +61,11 @@ p{
     line-height: 20px;
 }
 
+ul{
+    padding: 0;
+    margin: 0;
+}
+
 /*-------------------custom---------------*/
 
 /*header*/
@@ -88,6 +93,7 @@ nav{
 }
 .menu li:last-child{
     float: right;
+    position:relative;
 }
 .menu li::after{
     display: block;
@@ -101,9 +107,146 @@ nav{
     padding: 0 20px;
 }
 
-.menu li:hover a{
+.menu>li:hover>a{
     background-color: #008aee;
 }
+
+.menu>li:last-child ul{
+    display: none;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    width: 285px;
+    padding-top: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 8px 0 #5095ff;
+    z-index: 1;
+}
+.menu>li:last-child:hover ul{
+    display: block;
+}
+
+.acc-guest li {
+    margin-bottom: 11px;
+    padding: 0 15px 0;
+    width:100%;
+}
+.acc-guest li>a {
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 400;
+    /* line-height: 40px; */
+}
+.login-link a {
+    background-color: #fdd835;
+    color: #444;
+}
+.login-link a, .register-link a {
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(0,0,0,.15);
+}
+.register-link a {
+    background-color: #189eff;
+}
+.login-fb-link a {
+    background-color: #3a5999;
+}
+
+.main-menu a {
+    color: #fff;
+    font-weight: 700;
+}
+
+.acc-guest .sp-guest {
+    margin-bottom: 0;
+    border-top: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+.acc-guest p {
+    margin-bottom: 0;
+    padding: 10px 0;
+    color: #666;
+}
+.acc-guest p a {
+    display: inline;
+    color: #db361f;
+    font-weight: bold;
+}
+
+.sp-guest p{
+    line-height: 0;
+    padding: 20px 0 0 0;
+    margin: 0;
+}
+.menu .sp-guest a{
+    padding: 0;
+}
+
+.list-hang {
+    position: relative;
+}
+
+.list-hang:hover .dropdown-menu-wrap{
+    display: block;
+}
+.dropdown-menu-wrap {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: -104%;
+    width: 600px;
+    padding: 15px 20px;
+    background-color: #fff;
+    box-shadow: 0 0 8px 0 #5095ff;
+}
+.submenu-2 li {
+    width: 25%;
+    float: left;
+    color: #000;
+    text-align: center;
+}
+
+.submenu-2 li img{
+    max-width: 45px;
+
+}
+.submenu-2 li span{
+    display: block;
+}
+.submenu-2 li a{
+    height: auto;
+    line-height: normal;
+    padding-bottom: 15px;
+}
+.submenu-2 h3{
+    color: #000;
+}
+.submenu-2 li:hover a{
+    color: #189eff;
+}
+.submenu-2 li:last-child a{
+    color: #189eff;
+}
+.submenu-2 li:last-child:hover a{
+    color: #008aee;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*footer*/
