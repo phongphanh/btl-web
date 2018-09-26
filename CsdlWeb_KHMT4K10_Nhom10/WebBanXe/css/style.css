@@ -56,6 +56,7 @@ img{
     float: left;
 }
 
+
 p{
     font-size: 13px;
     line-height: 20px;
@@ -234,9 +235,13 @@ nav{
     text-decoration: underline;
 }
 
-
-
-
+#main-menu .menu .cart-li{
+    color: #fdd835;
+    float: right;
+}
+#main-menu .menu .cart-li a{
+    line-height: 35px;
+}
 
 
 
