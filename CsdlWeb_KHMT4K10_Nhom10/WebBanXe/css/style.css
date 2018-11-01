@@ -67,6 +67,12 @@ ul{
     margin: 0;
 }
 
+.fright{
+    float: right;
+}
+.fleft{
+    float: left;
+}
 /*-------------------custom---------------*/
 
 /*header*/
@@ -243,8 +249,64 @@ nav{
     line-height: 35px;
 }
 
+.search-wrap{
 
+}
+.search-wrap select{
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    vertical-align: top;
+    width: 300px;
+    padding: 0 10px;
+    box-shadow: 0 0 8px 0 #5095ff;
+}
+.search-wrap a{
+    box-shadow: 0 0 8px 0 #5095ff;
+    vertical-align: top;
+    color:#fff;
+    margin-left:10px;
+    border-radius: 3px;
+    display: inline-block;
+    height: 40px;
+    width: 60px;
+    text-align: center;
+    background-color: #189eff;
+    line-height: 40px;
+    transition: all 0.1s;
+    font-size: 20px;
+}
 
+.search-wrap a:hover{
+    background-color: #fdd835;
+    color: #fff;
+}
+
+.slide{
+    position: relative;
+}
+
+.slide .search-site{
+    position: absolute;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index:1;
+    width:100%;
+}
+
+.slide .search-site .search-wrap{
+    margin-top: 30px;
+    text-align: right;
+    float: right;
+}
+.slide .row{
+    height: 0;
+}
 
 
 

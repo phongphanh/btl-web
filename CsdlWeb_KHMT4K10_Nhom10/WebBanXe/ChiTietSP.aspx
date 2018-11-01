@@ -2,5 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     Chi tiết sản phẩm
+    <br />
+    <asp:LinkButton PostBackUrl="~/WebBanXe/GioHang.aspx" ID="LinkButton1" runat="server">đặt mua</asp:LinkButton>
 </asp:Content>
 

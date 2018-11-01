@@ -4,6 +4,11 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <h1>Nội Dung Trang Quản Lý Đơn Hàng</h1>
+    <asp:Button PostBackUrl="~/WebBanXe/admin/ThemDonHang.aspx" ID="Button1" runat="server" Text="thêm" />
+    <asp:Button PostBackUrl="~/WebBanXe/admin/SuaDonHang.aspx" ID="Button2" runat="server" Text="sửa" />
+    <button>xóa</button>
+
+
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" Runat="Server">
     <script>

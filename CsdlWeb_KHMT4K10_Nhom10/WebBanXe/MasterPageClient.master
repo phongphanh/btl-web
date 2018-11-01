@@ -7,6 +7,8 @@
     <title>Otos</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i&amp;subset=vietnamese" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="libs/owl/owl.carousel.min.css" rel="stylesheet" />
+    <link href="libs/owl/owl.theme.green.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/WebBanXe/css/style.css" />
 </head>
 <body>
@@ -107,7 +109,7 @@
                                                 </asp:LinkButton>
                                             </li>
                                             <li>
-                                                <asp:LinkButton PostBackUrl="~/WebBanXe/SanPham.aspx" ID="LinkButton20" runat="server">Xem tất cả</asp:LinkButton>
+                                                <asp:LinkButton PostBackUrl="~/WebBanXe/DSHangXe.aspx" ID="LinkButton20" runat="server">Xem tất cả</asp:LinkButton>
                                             </li>
                                         </ul>
                                     </div>
@@ -145,10 +147,9 @@
                     </div>
                 </nav>
             </header>
-            <main id="content">
-                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                </asp:ContentPlaceHolder>
-            </main>
+            
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
             <footer id="footer" class="footer">
                 <div class=" footer-top">
 
@@ -274,7 +275,7 @@
                         <div class="row">
                             <div class="col-70">
                                 <p>Giấy phép số 011/GP-TTĐT - Sở thông tin và truyền thông TP. Hồ Chí Minh - Cấp ngày 26/01/2015. Người chịu trách nhiệm nội dung: Nguyễn Ngọc Vĩnh. Ghi rõ nguồn “OtoS.vn” khi bạn phát hành lại thông tin từ website này.</p>
-                                <p>OtoS không bán xe trực tiếp, quý khách mua xe vui lòng liên hệ trực tiếp người đăng tin.</p>
+                                
                             </div>
                             <div class="col-30">
                                 <h3>Đã đăng ký BTC</h3>
@@ -292,5 +293,8 @@
             </footer>
         </div>
     </form>
+    <script type="text/javascript" src="libs/jquery/jquery.js"></script>
+    <script type="text/javascript" src="libs/owl/owl.carousel.min.js"></script>
+    <script type="text/javascript"  src="js/script.js"></script>
 </body>
 </html>
