@@ -36,11 +36,15 @@ a{
     text-transform: uppercase;
     border-radius: 5px;
     line-height: 42px;
+    cursor: pointer;
+    transition: all .3s;
 }
 .btn-red{
     background: #d82222;
 }
-
+.btn-red:hover{
+    background: #981212;
+}
 .container{
     max-width: 1170px;
     padding: 0 15px;
@@ -444,7 +448,7 @@ nav{
     color: #fff;
     font-size: 12px;
 }
-.product span{
+.product  span.price{
     float: right;
     color: #008aee;
     font-weight: 600;

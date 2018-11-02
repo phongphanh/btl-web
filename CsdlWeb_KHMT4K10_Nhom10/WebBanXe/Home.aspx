@@ -62,7 +62,7 @@
                                             <img src="image/Nissan/Normal-2009-Nissan-Pathfinder-LE-1.jpg" />
                                             <p class="item-title"><b>2018 Mazda 3 1.5 AT Sedan</b></p>
                                             <label>Xe mới</label>
-                                            <span>1 tỷ 19 triệu</span>
+                                            <span class="price">1 tỷ 19 triệu</span>
                                             <p class="item-add">Tp Hồ Chí Minh</p>
                                             <div class="numb-img">
                                                 <i class="fas fa-camera"></i>
@@ -76,7 +76,7 @@
                                             <img src="image/Nissan/Normal-2009-Nissan-Pathfinder-LE-1.jpg" />
                                             <p class="item-title"><b>2018 Mazda 3 1.5 AT Sedan</b></p>
                                             <label>Xe mới</label>
-                                            <span>1 tỷ 19 triệu</span>
+                                            <span class="price">1 tỷ 19 triệu</span>
                                             <p class="item-add">Tp Hồ Chí Minh</p>
                                             <div class="numb-img">
                                                 <i class="fas fa-camera"></i>
@@ -90,7 +90,7 @@
                                             <img src="image/Nissan/Normal-2009-Nissan-Pathfinder-LE-1.jpg" />
                                             <p class="item-title"><b>2018 Mazda 3 1.5 AT Sedan</b></p>
                                             <label>Xe mới</label>
-                                            <span>1 tỷ 19 triệu</span>
+                                            <span class="price">1 tỷ 19 triệu</span>
                                             <p class="item-add">Tp Hồ Chí Minh</p>
                                             <div class="numb-img">
                                                 <i class="fas fa-camera"></i>
@@ -104,7 +104,7 @@
                                             <img src="image/Nissan/Normal-2009-Nissan-Pathfinder-LE-1.jpg" />
                                             <p class="item-title"><b>2018 Mazda 3 1.5 AT Sedan</b></p>
                                             <label>Xe mới</label>
-                                            <span>1 tỷ 19 triệu</span>
+                                            <span class="price">1 tỷ 19 triệu</span>
                                             <p class="item-add">Tp Hồ Chí Minh</p>
                                             <div class="numb-img">
                                                 <i class="fas fa-camera"></i>
@@ -118,7 +118,7 @@
                                             <img src="image/Nissan/Normal-2009-Nissan-Pathfinder-LE-1.jpg" />
                                             <p class="item-title"><b>2018 Mazda 3 1.5 AT Sedan</b></p>
                                             <label>Xe mới</label>
-                                            <span>1 tỷ 19 triệu</span>
+                                            <span class="price">1 tỷ 19 triệu</span>
                                             <p class="item-add">Tp Hồ Chí Minh</p>
                                             <div class="numb-img">
                                                 <i class="fas fa-camera"></i>
@@ -132,7 +132,7 @@
                                             <img src="image/Nissan/Normal-2009-Nissan-Pathfinder-LE-1.jpg" />
                                             <p class="item-title"><b>2018 Mazda 3 1.5 AT Sedan</b></p>
                                             <label>Xe mới</label>
-                                            <span>1 tỷ 19 triệu</span>
+                                            <span class="price">1 tỷ 19 triệu</span>
                                             <p class="item-add">Tp Hồ Chí Minh</p>
                                             <div class="numb-img">
                                                 <i class="fas fa-camera"></i>
@@ -146,7 +146,7 @@
                                             <img src="image/Nissan/Normal-2009-Nissan-Pathfinder-LE-1.jpg" />
                                             <p class="item-title"><b>2018 Mazda 3 1.5 AT Sedan</b></p>
                                             <label>Xe mới</label>
-                                            <span>1 tỷ 19 triệu</span>
+                                            <span class="price">1 tỷ 19 triệu</span>
                                             <p class="item-add">Tp Hồ Chí Minh</p>
                                             <div class="numb-img">
                                                 <i class="fas fa-camera"></i>
