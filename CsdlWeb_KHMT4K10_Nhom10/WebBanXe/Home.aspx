@@ -2,6 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <main id="content">
+
         <section class="slide">
             <div class="owl-carousel">
                 <div>
@@ -52,9 +53,13 @@
                 <div class="row">
                     <div class="col-70">
                         <section class="section product">
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:QLBanOToConnectionString %>" SelectCommand="SELECT [TenXe], [Gia], [Anh], [KhuVuc], [ID_Xe], [NgayDang] FROM [Xe] ORDER BY [NgayDang] DESC"></asp:SqlDataSource>
                             <div class="ema_title">
                                 <a class="ema_txt" href="#">Xe ô tô mới đăng</a>
                             </div>
+
+
+
                             <div class="product-list">
                                 <div class="row" style="margin: 5px -5px;">
                                     <div class="col-25">
