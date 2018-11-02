@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/WebBanXe/MasterPageAdmin.master" AutoEventWireup="true" CodeFile="SuaTK.aspx.cs" Inherits="WebBanXe_admin_SuaTK" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPageAdmin.master" AutoEventWireup="true" CodeFile="SuaTK.aspx.cs" Inherits="WebBanXe_admin_SuaTK" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>

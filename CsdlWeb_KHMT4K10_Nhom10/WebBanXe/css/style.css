@@ -22,7 +22,12 @@ a{
     color: inherit;
     text-decoration: none;
 }
-
+.fleft {
+    float:left;
+}
+.fright {
+float:right;
+}
 .site-btn{
 }
 
@@ -36,6 +41,7 @@ a{
     text-transform: uppercase;
     border-radius: 5px;
     line-height: 42px;
+    cursor:pointer;
 }
 .btn-red{
     background: #d82222;
@@ -67,15 +73,18 @@ img{
 .col-25{
     width: 25%;
     float: left;
+   
 }
 
 .col-30{
     width:30%;
-    float: left
+    float: left;
+    padding:15px;
 }
 .col-70{
     width: 70%;
     float: left;
+    padding:15px;
 }
 
 .ema_title {
@@ -267,6 +276,7 @@ nav{
     padding: 15px 20px;
     background-color: #fff;
     box-shadow: 0 0 8px 0 #5095ff;
+    z-index:1000;
 }
 .submenu-2 li {
     width: 25%;
@@ -493,3 +503,248 @@ footer{
     color: #fff;
     text-align: center;
 }
+/*Trang sản phẩm*/
+.filter-title h4 {
+margin:0px;
+padding:0px;
+text-transform:uppercase;
+ color:#008aee;
+}
+.sidebar {
+    background: #fff;
+    margin-top: 30px;
+    border-radius:4px;
+    padding:15px 15px 20px;
+}
+.product-page {
+background:#efefef;
+}
+    .product-page .product-item {
+    border-color:#fff;
+    background:#fff;
+    }
+.product-page .col-25 {
+    width:33.3333%;
+}
+.brands {
+   height:245px;
+    overflow:hidden;
+    transition:0.3s ease-in-out;
+}
+.height-auto {
+height:473px;
+overflow:auto;
+transition:0.3s ease-in-out;
+
+}
+.brands-content {
+border-bottom:1px solid #efefef;
+padding-top:20px;
+}
+    .brands-content:first-child {
+    padding-top:0px;
+    }
+     .brands-content:last-child {
+    border-bottom:none;
+    }
+.br-price {
+border-bottom:none;
+height:235px;
+}
+.col-brands {
+   width:50%;
+   float:left;
+  
+}
+.col-brands ul{
+margin:15px 0px 0px;
+padding:0px;
+list-style:none;
+}
+.col-brands ul li a p {
+display:inline-block;
+margin:0px;
+
+}
+    .col-brands ul li {
+    margin-bottom:5px;
+    cursor:pointer;
+    }
+    .col-brands ul li a .p1 {
+    width:24px;
+    vertical-align:sub;
+    height:34px;
+    }
+    .col-brands ul li a p input {
+  width:14px;
+    height:14px;
+    }
+    .col-brands ul li a .p2 {
+    vertical-align:middle;
+    }
+      .col-brands ul li a .p2 img {
+    vertical-align:middle;
+    width:38px;
+    }
+    .col-brands ul li a .p2 span {
+        font-size:14px;
+        line-height:34px;
+    }
+.btn-more {
+margin:10px 0px;
+display:block;
+color:#008aee;
+text-align:left;
+font-size:15px;
+}
+    .btn-more span {
+    vertical-align:middle;
+    color:#008aee;
+    }
+.col30-btn {
+    display:block;
+    text-align:center;
+
+}
+.col30-btn a {
+    color:#fff;
+    background:#008aee;
+    display:block;
+    width:92%;
+    padding:7px 0px;
+    margin:0 auto;
+    border-radius:5px;
+    font-weight:600;
+}
+    .col30-btn a:hover {
+    background:#0d77c3;
+    }
+.paging {
+display:block;
+text-align:center;
+padding:35px 0px 25px;
+}
+    .paging ul li {
+            width: 30px;
+    height: 30px;
+    text-align: center;
+    cursor:pointer;
+   
+    }
+        .paging ul li:hover span {
+        color:#008aee;
+        font-weight:600;
+        }
+        .paging ul li span {
+        line-height:30px;
+        vertical-align:middle;
+        }
+        .paging ul li.active {
+        background:#fff;
+        border-radius:3px;
+        border:1px solid #008aee;
+        }
+ /************Giỏ hàng************/
+.page-cart {
+padding-top:10px;
+padding-bottom:80px;
+box-sizing:border-box;
+}
+.cart-content table {
+width:100%;
+border:1px solid #000;
+padding:10px;
+
+}
+    .cart-content table tr td {
+    padding:10px;
+    margin:0px;
+    border:1px solid #000;
+    text-align:center;
+    
+    }
+    
+    .cart-content table tr th {
+    padding:10px 0px;
+    margin:0px;
+    border:1px solid #000;
+    text-align:center;
+    }
+        .cart-content table tr td p {
+        margin:0px;
+        padding:0px;
+        display:inline-block;
+        font-size:15px;
+        }
+
+        .cart-content table tr td span {
+       font-size:13px;
+        }
+
+    .cart-content table tr td a{
+       border-radius:4px;
+        font-size:15px;
+        padding:6px 7px;
+        background:#efefef;
+        font-weight:600;
+        color:#444;
+        
+    }
+        .cart-content table tr td a:hover {
+        background:#d4d4d4;
+        }
+    .cart-content table tr td a:first-child{
+      margin-right:15px;
+        
+    }
+    .cart-content table tr td:nth-child(1){
+        width:60px;
+      
+    }
+.color-red {
+color:red;
+}
+
+ .cart-content table tr td:nth-child(1) .color-red{
+       width:20px;
+       height:20px;
+      font-size:16px;
+      cursor:pointer;
+    }
+     .cart-content table tr td:nth-child(2){
+        width:250px;
+    } 
+      .cart-content table tr td:nth-child(2) img{
+        width:200px;
+        height:auto;
+    } 
+     .cart-content table tr td:nth-child(3){
+        width:320px;
+    }
+      .cart-content table tr td:nth-child(4){
+        width:190px;
+    } 
+      .cart-content table tr td:nth-child(5){
+        width:94px;
+    }
+.cart-title {
+padding: 7px 0px;
+margin: 30px 0px 15px;
+}
+.cart-title h2{
+margin:0px;
+padding:0px 0px 0px 15px;
+text-transform:uppercase;
+}
+.cart-title {
+position:relative;
+}
+    .cart-title:before {
+    content:'';
+    position:absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:4.5px;
+    background:red;
+    }

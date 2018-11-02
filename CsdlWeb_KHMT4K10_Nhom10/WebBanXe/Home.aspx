@@ -1,7 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/WebBanXe/MasterPageClient.master" AutoEventWireup="true" CodeFile="Home.aspx.cs" Inherits="WebBanXe_Home" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPageClient.master" AutoEventWireup="true" CodeFile="Home.aspx.cs" Inherits="WebBanXe_Home" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <main id="content">
+    <section id="content">
         <section class="slide">
             <div class="owl-carousel">
                 <div>
@@ -40,7 +40,7 @@
                                 <option>1 tỷ - 3 tỷ</option>
                                 <option>trên 3 tỷ</option>
                             </select>
-                            <asp:LinkButton PostBackUrl="~/WebBanXe/SanPham.aspx" ID="LinkButton1" runat="server"><i class="fas fa-search"></i></asp:LinkButton>
+                            <asp:LinkButton PostBackUrl="~/SanPham.aspx" ID="LinkButton1" runat="server"><i class="fas fa-search"></i></asp:LinkButton>
                         </div>
                     </div>
                 </div>
@@ -170,6 +170,6 @@
 
         </div>
 
-    </main>
+    </section>
 </asp:Content>
 

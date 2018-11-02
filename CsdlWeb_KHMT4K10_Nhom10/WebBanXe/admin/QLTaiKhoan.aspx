@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/WebBanXe/MasterPageAdmin.master" AutoEventWireup="true" CodeFile="QLTaiKhoan.aspx.cs" Inherits="WebBanXe_admin_QLTaiKhoan" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPageAdmin.master" AutoEventWireup="true" CodeFile="QLTaiKhoan.aspx.cs" Inherits="WebBanXe_admin_QLTaiKhoan" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>

@@ -6,4 +6,7 @@
         animateOut: 'slideOutDown',
         animateIn: 'flipInX',
     });
+    $(".btn-more a").click(function () {
+        $(this).closest(".brands-content").find(".brands").toggleClass("height-auto");
+    })
 });

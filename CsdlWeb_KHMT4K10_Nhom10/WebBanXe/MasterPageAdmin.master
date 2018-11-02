@@ -59,7 +59,7 @@
                             <a href="#" class="dropdown-item">
                                 <!-- Message Start -->
                                 <div class="media">
-                                    <asp:Image ID="Image2" ImageUrl="~/WebBanXe/admin/image/user1-128x128.jpg" class="img-size-50 mr-3 img-circle" runat="server" />
+                                    <asp:Image ID="Image2" ImageUrl="~/admin/image/user1-128x128.jpg" class="img-size-50 mr-3 img-circle" runat="server" />
                                     <div class="media-body">
                                         <h3 class="dropdown-item-title">Brad Diesel
                   <span class="float-right text-sm text-danger"><i class="fa fa-star"></i></span>
@@ -74,7 +74,7 @@
                             <a href="#" class="dropdown-item">
                                 <!-- Message Start -->
                                 <div class="media">
-                                    <asp:Image ID="Image3" ImageUrl="~/WebBanXe/admin/image/user8-128x128.jpg" class="img-size-50 img-circle mr-3" runat="server" />
+                                    <asp:Image ID="Image3" ImageUrl="~/admin/image/user8-128x128.jpg" class="img-size-50 img-circle mr-3" runat="server" />
                                     <div class="media-body">
                                         <h3 class="dropdown-item-title">John Pierce
                   <span class="float-right text-sm text-muted"><i class="fa fa-star"></i></span>
@@ -89,7 +89,7 @@
                             <a href="#" class="dropdown-item">
                                 <!-- Message Start -->
                                 <div class="media">
-                                    <asp:Image ID="Image4" ImageUrl="~/WebBanXe/admin/image/user3-128x128.jpg" class="img-size-50 img-circle mr-3" runat="server" />
+                                    <asp:Image ID="Image4" ImageUrl="~/admin/image/user3-128x128.jpg" class="img-size-50 img-circle mr-3" runat="server" />
                                     <div class="media-body">
                                         <h3 class="dropdown-item-title">Nora Silvester
                   <span class="float-right text-sm text-warning"><i class="fa fa-star"></i></span>
@@ -143,7 +143,7 @@
             <aside class="main-sidebar sidebar-dark-primary elevation-4">
                 <!-- Brand Logo -->
                 <asp:LinkButton ID="LinkButton2" CssClass="brand-link" PostBackUrl="~/WebBanXe/admin/admin.aspx" runat="server">
-                    <asp:Image ID="Image1" ImageUrl="~/WebBanXe/admin/image/AdminLTELogo.png" class="brand-image img-circle elevation-3" style="opacity: .8" runat="server" />
+                    <asp:Image ID="Image1" ImageUrl="~/admin/image/AdminLTELogo.png" class="brand-image img-circle elevation-3" style="opacity: .8" runat="server" />
                    <span class="brand-text font-weight-light">Admin</span>
                 </asp:LinkButton>
                 <!-- Sidebar -->
@@ -151,7 +151,7 @@
                     <!-- Sidebar user panel (optional) -->
                     <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                         <div class="image">
-                            <asp:Image ID="Image5" ImageUrl="~/WebBanXe/admin/image/user2-160x160.jpg"  class="img-circle elevation-2" runat="server" />
+                            <asp:Image ID="Image5" ImageUrl="~/admin/image/user2-160x160.jpg"  class="img-circle elevation-2" runat="server" />
                         </div>
                         <div class="info">
                             <a href="#" class="d-block">Nhóm 10</a>
