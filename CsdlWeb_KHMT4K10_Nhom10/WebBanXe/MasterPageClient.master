@@ -23,7 +23,7 @@
                             </asp:LinkButton>
                         </div>
                         <div class="banner-site">
-                            <asp:Image ImageUrl="https://via.placeholder.com/750x90?text=banner" runat="server" />
+                            <asp:Image ImageUrl="image/system/baner.gif" runat="server" />
                         </div>
                     </div>
                 </div>
