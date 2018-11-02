@@ -274,6 +274,7 @@ nav{
     display: block;
 }
 .dropdown-menu-wrap {
+    z-index: 2;
     position: absolute;
     display: none;
     top: 100%;
