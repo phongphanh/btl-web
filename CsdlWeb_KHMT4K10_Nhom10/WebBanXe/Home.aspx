@@ -62,113 +62,39 @@
 
                             <div class="product-list">
                                 <div class="row" style="margin: 5px -5px;">
-                                    <div class="col-25">
-                                        <div class="product-item">
-                                            <img src="image/Nissan/Normal-2009-Nissan-Pathfinder-LE-1.jpg" />
-                                            <p class="item-title"><b>2018 Mazda 3 1.5 AT Sedan</b></p>
-                                            <label>Xe mới</label>
-                                            <span class="price">1 tỷ 19 triệu</span>
-                                            <p class="item-add">Tp Hồ Chí Minh</p>
-                                            <div class="numb-img">
-                                                <i class="fas fa-camera"></i>
-                                                <span>10</span>
-                                            </div>
-                                        </div>
-                                    </div>
+
 
                                     <div class="col-25">
-                                        <div class="product-item">
-                                            <img src="image/Nissan/Normal-2009-Nissan-Pathfinder-LE-1.jpg" />
-                                            <p class="item-title"><b>2018 Mazda 3 1.5 AT Sedan</b></p>
-                                            <label>Xe mới</label>
-                                            <span class="price">1 tỷ 19 triệu</span>
-                                            <p class="item-add">Tp Hồ Chí Minh</p>
-                                            <div class="numb-img">
-                                                <i class="fas fa-camera"></i>
-                                                <span>10</span>
+                                        <asp:LinkButton PostBackUrl="~/WebBanXe/SanPham.aspx" ID="LinkButton2" runat="server">
+                                            
+                                            <div class="product-item">
+                                                <img src="image/Nissan/Normal-2009-Nissan-Pathfinder-LE-1.jpg" />
+                                                <p class="item-title"><b>2018 Mazda 3 1.5 AT Sedan</b></p>
+                                                <label>Xe mới</label>
+                                                <span class="price">1 tỷ 19 triệu</span>
+                                                <p class="item-add">Tp Hồ Chí Minh</p>
+                                                <div class="numb-img">
+                                                    <i class="fas fa-camera"></i>
+                                                    <span>10</span>
+                                                </div>
                                             </div>
-                                        </div>
+                                        </asp:LinkButton>
                                     </div>
 
-                                    <div class="col-25">
-                                        <div class="product-item">
-                                            <img src="image/Nissan/Normal-2009-Nissan-Pathfinder-LE-1.jpg" />
-                                            <p class="item-title"><b>2018 Mazda 3 1.5 AT Sedan</b></p>
-                                            <label>Xe mới</label>
-                                            <span class="price">1 tỷ 19 triệu</span>
-                                            <p class="item-add">Tp Hồ Chí Minh</p>
-                                            <div class="numb-img">
-                                                <i class="fas fa-camera"></i>
-                                                <span>10</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-25">
-                                        <div class="product-item">
-                                            <img src="image/Nissan/Normal-2009-Nissan-Pathfinder-LE-1.jpg" />
-                                            <p class="item-title"><b>2018 Mazda 3 1.5 AT Sedan</b></p>
-                                            <label>Xe mới</label>
-                                            <span class="price">1 tỷ 19 triệu</span>
-                                            <p class="item-add">Tp Hồ Chí Minh</p>
-                                            <div class="numb-img">
-                                                <i class="fas fa-camera"></i>
-                                                <span>10</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-25">
-                                        <div class="product-item">
-                                            <img src="image/Nissan/Normal-2009-Nissan-Pathfinder-LE-1.jpg" />
-                                            <p class="item-title"><b>2018 Mazda 3 1.5 AT Sedan</b></p>
-                                            <label>Xe mới</label>
-                                            <span class="price">1 tỷ 19 triệu</span>
-                                            <p class="item-add">Tp Hồ Chí Minh</p>
-                                            <div class="numb-img">
-                                                <i class="fas fa-camera"></i>
-                                                <span>10</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-25">
-                                        <div class="product-item">
-                                            <img src="image/Nissan/Normal-2009-Nissan-Pathfinder-LE-1.jpg" />
-                                            <p class="item-title"><b>2018 Mazda 3 1.5 AT Sedan</b></p>
-                                            <label>Xe mới</label>
-                                            <span class="price">1 tỷ 19 triệu</span>
-                                            <p class="item-add">Tp Hồ Chí Minh</p>
-                                            <div class="numb-img">
-                                                <i class="fas fa-camera"></i>
-                                                <span>10</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-25">
-                                        <div class="product-item">
-                                            <img src="image/Nissan/Normal-2009-Nissan-Pathfinder-LE-1.jpg" />
-                                            <p class="item-title"><b>2018 Mazda 3 1.5 AT Sedan</b></p>
-                                            <label>Xe mới</label>
-                                            <span class="price">1 tỷ 19 triệu</span>
-                                            <p class="item-add">Tp Hồ Chí Minh</p>
-                                            <div class="numb-img">
-                                                <i class="fas fa-camera"></i>
-                                                <span>10</span>
-                                            </div>
-                                        </div>
-                                    </div>
+                        
                                 </div>
                             </div>
                             <div class="site-btn">
-                                <button class="btn btn-red">Xem thêm xe</button>
+                                <asp:LinkButton CssClass="btn btn-red" ID="LinkButton3" PostBackUrl="~/WebBanXe/SanPham.aspx" runat="server">
+                                    Xem thêm xe
+                                </asp:LinkButton>
                             </div>
                         </section>
                         <section class="section quangcao" style="text-align: center;">
                             <img style="width: 100%;" src="image/system/baner2.gif" />
                         </section>
-                        <section class="section tuvan">
+
+<%--                        <section class="section tuvan">
                             <div class="ema_title">
                                 <a class="ema_txt" href="#">Tư vấn</a>
                             </div>
@@ -247,7 +173,7 @@
 
                         <section class="section quangcao" style="text-align: center;">
                             <img style="width: 100%;" src="image/system/baner2.gif" />
-                        </section>
+                        </section>--%>
                     </div>
                     <div class="col-30">
                         <aside class="aside-site">
@@ -291,7 +217,7 @@
                                 </div>
                             </section>
                             
-                            <section class="section promotion">
+<%--                            <section class="section promotion">
                                 <div class="ema_title">
                                     <a class="ema_txt" href="#">Khuyến mãi</a>
                                 </div>
@@ -320,7 +246,7 @@
                                     </div>
 
                                 </div>
-                            </section>
+                            </section>--%>
 
                         </aside>
                     </div>
