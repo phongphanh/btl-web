@@ -27,12 +27,6 @@
                     <li class="nav-item">
                         <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
                     </li>
-           <%--         <li class="nav-item d-none d-sm-inline-block">
-                        <asp:LinkButton ID="LinkButton1" CssClass="nav-link" PostBackUrl="~/WebBanXe/admin/admin.aspx" runat="server">Home</asp:LinkButton>
-                    </li>
-                    <li class="nav-item d-none d-sm-inline-block">
-                        <a href="#t" class="nav-link">Contact</a>
-                    </li>--%>
                 </ul>
 
                 <!-- SEARCH FORM -->
@@ -131,10 +125,6 @@
                             <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
                         </div>
                     </li>
-<%--                    <li class="nav-item">
-                        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#"><i
-                            class="fa fa-th-large"></i></a>
-                    </li>--%>
                 </ul>
             </nav>
             <!-- /.navbar -->
@@ -175,25 +165,25 @@
                                     <li class="nav-item">
                                         <asp:LinkButton ID="nav_hang" PostBackUrl="~/WebBanXe/admin/QLHangXe.aspx" class="nav-link" runat="server">
                                             <i class="fa fa-circle-o nav-icon"></i>
-                                            <p>Quản Lý Hãng Xe</p>
+                                            <p>Quản lý hãng xe</p>
                                         </asp:LinkButton>
                                     </li>
                                     <li class="nav-item">
                                         <asp:LinkButton ID="nav_xe" PostBackUrl="~/WebBanXe/admin/QLXe.aspx" class="nav-link" runat="server">
                                             <i class="fa fa-circle-o nav-icon"></i>
-                                            <p>Quản Lý Xe</p>
+                                            <p>Quản lý xe</p>
                                         </asp:LinkButton>
                                     </li>
                                     <li class="nav-item">
                                         <asp:LinkButton PostBackUrl="~/WebBanXe/admin/QLDonHang.aspx" ID="nav_order"  class="nav-link" runat="server">
                                             <i class="fa fa-circle-o nav-icon"></i>
-                                            <p>Quản Lý Đơn Hàng</p>
+                                            <p>Quản lý đơn hàng</p>
                                         </asp:LinkButton>
                                     </li>
                                     <li class="nav-item">
                                         <asp:LinkButton PostBackUrl="~/WebBanXe/admin/QLTaiKhoan.aspx" ID="nav_tk" class="nav-link" runat="server">
                                             <i class="fa fa-circle-o nav-icon"></i>
-                                            <p>Quản Lý Tài Khoản</p>
+                                            <p>Quản lý tài khoản</p>
                                         </asp:LinkButton>
                                     </li>
                                 </ul>
@@ -202,7 +192,7 @@
                                 <a href="#" class="nav-link">
                                     <i class="nav-icon fa fa-th"></i>
                                     <p>
-                                        Thiết Lập
+                                        Thiết lập
                 <span class="right badge badge-danger">New</span>
                                     </p>
                                 </a>

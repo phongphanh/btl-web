@@ -182,6 +182,9 @@ nav{
     float: right;
     position:relative;
 }
+.menu li:last-child>a{
+    padding: 0;
+}
 .menu li::after{
     display: block;
     content: "";

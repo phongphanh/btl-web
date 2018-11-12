@@ -35,13 +35,13 @@
                     <div class="row">
                         <div class="search-wrap">
                             <select>
-                                <option>tìm kiếm theo giá</option>
+                                <option>--tìm kiếm theo giá--</option>
                                 <option>100 triệu - 500 triệu</option>
                                 <option>500 triệu - 1 tỷ</option>
                                 <option>1 tỷ - 3 tỷ</option>
                                 <option>trên 3 tỷ</option>
                             </select>
-                            <asp:LinkButton PostBackUrl="~/WebBanXe/SanPham.aspx" ID="LinkButton1" runat="server"><i class="fas fa-search"></i></asp:LinkButton>
+                            <asp:LinkButton PostBackUrl="~/WebBanXe/SanPham_Gia.aspx" ID="LinkButton1" runat="server"><i class="fas fa-search"></i></asp:LinkButton>
                         </div>
                     </div>
                 </div>
