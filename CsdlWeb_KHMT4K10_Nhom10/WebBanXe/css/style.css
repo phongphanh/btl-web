@@ -594,3 +594,32 @@ footer{
     color: #fff;
     text-align: center;
 }
+
+input, button{
+    outline: none
+}
+
+.dangky-wrap input[type="text"], .dangky-wrap input[type="submit"]{
+    width: 100%;
+    border-radius: 7px;
+    padding: 0 10px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #189eff;
+    margin-bottom: 5px;
+    margin-top:5px;
+    transition: all .3s;
+}
+
+.dangky-wrap input[type="text"]:focus, .dangky-wrap input[type="text"]:visited{
+    border: 2px solid #085f9e;
+}
+
+.dangky-wrap input[type="submit"]{
+    background-color: #46b8da;
+    color: #FFF;
+    font-size: 19px;
+    height: 40px;
+    line-height:40px;
+    margin-bottom: 40px;
+}
