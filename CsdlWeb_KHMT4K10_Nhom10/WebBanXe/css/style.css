@@ -182,9 +182,7 @@ nav{
     float: right;
     position:relative;
 }
-.menu li:last-child>a{
-    padding: 0;
-}
+
 .menu li::after{
     display: block;
     content: "";
@@ -212,7 +210,22 @@ nav{
     box-shadow: 0 0 8px 0 #5095ff;
     z-index: 2;
 }
-.menu>li:last-child:hover ul{
+.menu>li:last-child a#notLogin{
+    position: relative;
+    display: block;
+}
+#notLogin{
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    cursor: pointer;
+    transition: all .2s;
+    padding: 0 20px;
+}
+#notLogin:hover{
+    background-color: #008aee;
+}
+.menu>li:last-child #notLogin:hover ul{
     display: block;
 }
 
@@ -599,7 +612,7 @@ input, button{
     outline: none
 }
 
-.dangky-wrap input[type="text"], .dangky-wrap input[type="submit"]{
+.dangky-wrap input[type="text"], .dangky-wrap input[type="submit"], .dangky-wrap input[type="password"]{
     width: 100%;
     border-radius: 7px;
     padding: 0 10px;
@@ -611,7 +624,7 @@ input, button{
     transition: all .3s;
 }
 
-.dangky-wrap input[type="text"]:focus, .dangky-wrap input[type="text"]:visited{
+.dangky-wrap input[type="text"]:focus, .dangky-wrap input[type="text"]:visited,.dangky-wrap input[type="password"]:focus, .dangky-wrap input[type="password"]:visited{
     border: 2px solid #085f9e;
 }
 
@@ -622,4 +635,16 @@ input, button{
     height: 40px;
     line-height:40px;
     margin-bottom: 40px;
+    cursor: pointer;
+    transition: all .2s;
+}
+.dangky-wrap input[type="submit"]:hover{
+    background-color : #189eff;
+}
+.dangky-wrap td{
+    padding: 0 10px;
+    width: 50%;
+}
+table.dangky-wrap{
+    padding: 25px 10px;
 }

@@ -48,21 +48,23 @@
                             <li class="cart-li">
                                 <%--<asp:LinkButton ID="LinkButton23" PostBackUrl="~/WebBanXe/GioHang.aspx" runat="server"><i class="fas fa-shopping-cart"></i> <sup>0</sup></asp:LinkButton></li>--%>
                             <li>
-                                <asp:LinkButton ID="LinkButton6" runat="server"><i class="fas fa-user"></i> Tài khoản <i class="fa fa-angle-down"></i></asp:LinkButton>
-
-                                <ul class="acc-guest">
-                                    <li class="login-link">
-                                        <asp:LinkButton PostBackUrl="~/WebBanXe/DangNhap.aspx" ID="LinkButton21" runat="server">Đăng nhập</asp:LinkButton>
-                                    </li>
-                                    <li class="register-link">
-                                        <asp:LinkButton PostBackUrl="~/WebBanXe/DangKy.aspx" ID="LinkButton22" runat="server">Tạo tài khoản</asp:LinkButton></li>
-                                    <li class="login-fb-link"><a href="#"><i class="fab fa-facebook-f"></i> Đăng nhập bằng Facebook</a></li>
-                                    <li class="sp-guest">
-                                        <p>
-                                            Mọi vấn đề liên quan đến tài khoản, hãy gọi số <a href="tel:0906870699" title="Gọi đến: 0906 870 699">0906 870 699</a> để được hỗ trợ.
-                                        </p>
-                                    </li>
-                                </ul>
+                                <asp:Label ID="notLogin" runat="server" Text="Label">
+                                    <i class="fas fa-user"></i> Tài khoản <i class="fa fa-angle-down"></i>
+                                    <ul class="acc-guest">
+                                        <li class="login-link">
+                                            <asp:LinkButton PostBackUrl="~/WebBanXe/DangNhap.aspx" ID="LinkButton21" runat="server">Đăng nhập</asp:LinkButton>
+                                        </li>
+                                        <li class="register-link">
+                                            <asp:LinkButton PostBackUrl="~/WebBanXe/DangKy.aspx" ID="LinkButton22" runat="server">Tạo tài khoản</asp:LinkButton></li>
+                                        <li class="login-fb-link"><a href="#"><i class="fab fa-facebook-f"></i> Đăng nhập bằng Facebook</a></li>
+                                        <li class="sp-guest">
+                                            <p>
+                                                Mọi vấn đề liên quan đến tài khoản, hãy gọi số <a href="tel:0906870699" title="Gọi đến: 0906 870 699">0906 870 699</a> để được hỗ trợ.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </asp:Label>
+                                <asp:LinkButton ID="loggedIn" Visible="false" runat="server"></asp:LinkButton>
                                 
                             </li>
                         </ul>
