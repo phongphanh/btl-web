@@ -9,19 +9,22 @@ public partial class MasterPageClient : System.Web.UI.MasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (Session["LoggedIn"] == null)
+        
+
+        if (Session["LoggedIn"] == null || (bool)Session["LoggedIn"] == false)
         {
 
             loggedIn.Visible = false;
             notLogin.Visible = true;
-            //Response.Redirect("~/WebBanXe/DangNhap.aspx");
         }
         else
         {
             loggedIn.Visible = true;
             notLogin.Visible = false;
 
-            loggedIn.Text = (string)(Session["HoTen"]);
+            name_user.Text = (string)(Session["HoTen"]);
+            sdt_user.Text = (string)(Session["SDT"]);
         }
     }
+
 }

@@ -10,7 +10,7 @@ public partial class WebBanXe_DangKy : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        
     }
 
     protected void Button1_Click(object sender, EventArgs e)
@@ -52,6 +52,7 @@ public partial class WebBanXe_DangKy : System.Web.UI.Page
                             Session["Email"] = txt_email.Text;
                             Session["Password"] = txt_password.Text;
                             Session["HoTen"] = txt_hoten.Text;
+                            Session["SDT"] = txt_sdt.Text;
 
                             //ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Thông báo", "alert('Đăng ký thành công')", true);
                             Response.Redirect("~/WebBanXe/Home.aspx");

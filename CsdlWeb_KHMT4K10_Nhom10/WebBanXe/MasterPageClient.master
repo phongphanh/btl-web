@@ -18,7 +18,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="logo-site">
-                            <asp:LinkButton ID="logo" PostBackUrl="~/WebBanXe/Home.aspx" runat="server">
+                            <asp:LinkButton ID="logo" PostBackUrl="~/WebBanXe/Home.aspx" CausesValidation="false" runat="server">
                                 <asp:Image ImageUrl="image/system/logo.svg" runat="server" />
                             </asp:LinkButton>
                         </div>
@@ -28,52 +28,64 @@
                     </div>
                 </div>
 
-                <nav id="main-menu">    
+                <nav id="main-menu">
                     <div class="container">
                         <div class="row">
-                        <ul class="list-inline menu">
-                            <li>
-                                <asp:LinkButton PostBackUrl="~/WebBanXe/Home.aspx" ID="LinkButton1" runat="server"><i class="fas fa-home"></i> Trang chủ</asp:LinkButton></li>
-                            <li class="list-hang">
-                                <asp:LinkButton PostBackUrl="~/WebBanXe/DSHangXe.aspx"  ID="LinkButton2" runat="server">Hãng</asp:LinkButton>
-                            </li>
-                            <li>
-                                <asp:LinkButton ID="LinkButton3" runat="server">Bảng giá</asp:LinkButton></li>
-                            <li>
-                                <asp:LinkButton ID="LinkButton4" runat="server">Trang tin</asp:LinkButton></li>
-                            <li>
-                                <asp:LinkButton ID="LinkButton7" runat="server">Salon Ôtô</asp:LinkButton></li>
-                            <li>
-                                <asp:LinkButton ID="LinkButton5" runat="server">Đăng xe bán</asp:LinkButton></li>
-                            <li class="cart-li">
-                                <%--<asp:LinkButton ID="LinkButton23" PostBackUrl="~/WebBanXe/GioHang.aspx" runat="server"><i class="fas fa-shopping-cart"></i> <sup>0</sup></asp:LinkButton></li>--%>
-                            <li>
-                                <asp:Label ID="notLogin" runat="server" Text="Label">
-                                    <i class="fas fa-user"></i> Tài khoản <i class="fa fa-angle-down"></i>
-                                    <ul class="acc-guest">
-                                        <li class="login-link">
-                                            <asp:LinkButton PostBackUrl="~/WebBanXe/DangNhap.aspx" ID="LinkButton21" runat="server">Đăng nhập</asp:LinkButton>
-                                        </li>
-                                        <li class="register-link">
-                                            <asp:LinkButton PostBackUrl="~/WebBanXe/DangKy.aspx" ID="LinkButton22" runat="server">Tạo tài khoản</asp:LinkButton></li>
-                                        <li class="login-fb-link"><a href="#"><i class="fab fa-facebook-f"></i> Đăng nhập bằng Facebook</a></li>
-                                        <li class="sp-guest">
-                                            <p>
-                                                Mọi vấn đề liên quan đến tài khoản, hãy gọi số <a href="tel:0906870699" title="Gọi đến: 0906 870 699">0906 870 699</a> để được hỗ trợ.
-                                            </p>
-                                        </li>
-                                    </ul>
-                                </asp:Label>
-                                <asp:LinkButton ID="loggedIn" Visible="false" runat="server"></asp:LinkButton>
-                                
-                            </li>
-                        </ul>
-                    
+                            <ul class="list-inline menu">
+                                <li>
+                                    <asp:LinkButton PostBackUrl="~/WebBanXe/Home.aspx" CausesValidation="false" ID="LinkButton1" runat="server"><i class="fas fa-home"></i> Trang chủ</asp:LinkButton></li>
+                                <li class="list-hang">
+                                    <asp:LinkButton PostBackUrl="~/WebBanXe/DSHangXe.aspx" CausesValidation="false" ID="LinkButton2" runat="server">Hãng</asp:LinkButton>
+                                </li>
+                                <li>
+                                    <asp:LinkButton ID="LinkButton3" runat="server">Bảng giá</asp:LinkButton></li>
+                                <li>
+                                    <asp:LinkButton ID="LinkButton4" runat="server">Trang tin</asp:LinkButton></li>
+                                <li>
+                                    <asp:LinkButton ID="LinkButton7" runat="server">Salon Ôtô</asp:LinkButton></li>
+                                <li>
+                                    <asp:LinkButton ID="LinkButton5" runat="server">Đăng xe bán</asp:LinkButton></li>
+                                <li class="cart-li">
+                                    <%--<asp:LinkButton ID="LinkButton23" PostBackUrl="~/WebBanXe/GioHang.aspx" runat="server"><i class="fas fa-shopping-cart"></i> <sup>0</sup></asp:LinkButton></li>--%>
+                                    <li>
+                                        <asp:Label ID="notLogin" runat="server" Text="Label">
+                                            <i class="fas fa-user"></i>Tài khoản <i class="fa fa-angle-down"></i>
+                                            <ul class="acc-guest">
+                                                <li class="login-link">
+                                                    <asp:LinkButton PostBackUrl="~/WebBanXe/DangNhap.aspx" CausesValidation="false" ID="LinkButton21" runat="server">Đăng nhập</asp:LinkButton>
+                                                </li>
+                                                <li class="register-link">
+                                                    <asp:LinkButton PostBackUrl="~/WebBanXe/DangKy.aspx" CausesValidation="false" ID="LinkButton22" runat="server">Tạo tài khoản</asp:LinkButton></li>
+                                                <li class="login-fb-link"><a href="#"><i class="fab fa-facebook-f"></i>Đăng nhập bằng Facebook</a></li>
+                                                <li class="sp-guest">
+                                                    <p>
+                                                        Mọi vấn đề liên quan đến tài khoản, hãy gọi số <a href="tel:0906870699" title="Gọi đến: 0906 870 699">0906 870 699</a> để được hỗ trợ.
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </asp:Label>
+                                        <asp:Label ID="loggedIn" Visible="false" runat="server">
+                                            <i class="fas fa-user"></i>
+                                            <asp:Label ID="name_user" runat="server" Text="Label"></asp:Label>
+                                            <i class="fa fa-angle-down"></i>
+                                            <ul class="acc-guest">
+                                                <li class="login-fb-link">
+                                                    <asp:LinkButton ID="logout" PostBackUrl="~/WebBanXe/logOut.aspx" runat="server">Đăng xuất</asp:LinkButton>
+                                                </li>
+                                                <li class="sp-guest">
+                                                    <p>
+                                                        SDT: <asp:Label ID="sdt_user" runat="server" Text="Label"></asp:Label>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </asp:Label>
+                                    </li>
+                            </ul>
                         </div>
                     </div>
                 </nav>
             </header>
-            
+
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
             <footer id="footer" class="footer">
@@ -201,7 +213,7 @@
                         <div class="row">
                             <div class="col-70">
                                 <p>Giấy phép số 011/GP-TTĐT - Sở thông tin và truyền thông TP. Hồ Chí Minh - Cấp ngày 26/01/2015. Người chịu trách nhiệm nội dung: Nguyễn Ngọc Vĩnh. Ghi rõ nguồn “OtoS.vn” khi bạn phát hành lại thông tin từ website này.</p>
-                                
+
                             </div>
                             <div class="col-30">
                                 <h3>Đã đăng ký BTC</h3>
@@ -221,6 +233,6 @@
     </form>
     <script type="text/javascript" src="libs/jquery/jquery.js"></script>
     <script type="text/javascript" src="libs/owl/owl.carousel.min.js"></script>
-    <script type="text/javascript"  src="js/script.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

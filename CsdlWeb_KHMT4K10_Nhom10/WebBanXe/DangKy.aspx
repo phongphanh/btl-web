@@ -79,7 +79,7 @@
                 </table>
                 <br />
                 <div class="dangky-wrap" style="width: 350px; margin: 0 auto;">
-                    <input type="checkbox" required />Tôi đồng ý với chính sách bảo mật và điều khoản sử dụng của OtoS.vn
+                    <label for="agree"><input id="agree" type="checkbox" required />Tôi đồng ý với chính sách bảo mật và điều khoản sử dụng của OtoS.vn</label>
                     <br />
                     <br />
                     <asp:Button ID="btn_dangky" runat="server" Text="Đăng ký" OnClick="Button1_Click" />
