@@ -9,8 +9,6 @@ public partial class MasterPageClient : System.Web.UI.MasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        
-
         if (Session["LoggedIn"] == null || (bool)Session["LoggedIn"] == false)
         {
 
@@ -24,6 +22,8 @@ public partial class MasterPageClient : System.Web.UI.MasterPage
 
             name_user.Text = (string)(Session["HoTen"]);
             sdt_user.Text = (string)(Session["SDT"]);
+
+            ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Thông báo", "alert('Đăng nhập thành công!')", true);
         }
     }
 

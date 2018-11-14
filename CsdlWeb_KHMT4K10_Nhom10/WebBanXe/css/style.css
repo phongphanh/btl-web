@@ -463,6 +463,7 @@ nav{
 .item-title {
     margin-top: 5px;
     margin-bottom: 20px;
+    min-height: 40px;
 }
 .product label{
     background: #d82222;
@@ -652,4 +653,7 @@ input, button{
 }
 table.dangky-wrap{
     padding: 25px 10px;
+}
+table tr{
+    vertical-align: top;
 }

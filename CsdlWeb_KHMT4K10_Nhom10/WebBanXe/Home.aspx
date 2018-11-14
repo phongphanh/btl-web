@@ -34,14 +34,9 @@
                 <div class="container">
                     <div class="row">
                         <div class="search-wrap">
-                            <select>
-                                <option>--tìm kiếm theo giá--</option>
-                                <option>100 triệu - 500 triệu</option>
-                                <option>500 triệu - 1 tỷ</option>
-                                <option>1 tỷ - 3 tỷ</option>
-                                <option>trên 3 tỷ</option>
-                            </select>
-                            <asp:LinkButton PostBackUrl="~/WebBanXe/SanPham_Gia.aspx" ID="LinkButton1" runat="server"><i class="fas fa-search"></i></asp:LinkButton>
+                            <asp:DropDownList ID="ddl_Gia" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddl_Gia_SelectedIndexChanged">
+                            </asp:DropDownList>
+                            <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click"><i class="fas fa-search"></i></asp:LinkButton>
                         </div>
                     </div>
                 </div>
@@ -55,7 +50,7 @@
                         <section class="section product">
                             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:QLBanOToConnectionString %>" SelectCommand="SELECT [TenXe], [Gia], [Anh], [KhuVuc], [ID_Xe], [NgayDang] FROM [Xe] ORDER BY [NgayDang] DESC"></asp:SqlDataSource>
                             <div class="ema_title">
-                                <a class="ema_txt" href="#">Xe ô tô mới đăng</a>
+                                <a class="ema_txt" href="#">Xe ô tô</a>
                             </div>
 
 
