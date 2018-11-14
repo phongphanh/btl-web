@@ -1,11 +1,25 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/WebBanXe/MasterPageClient.master" AutoEventWireup="true" CodeFile="SanPham_Gia.aspx.cs" Inherits="WebBanXe_SanPham_Gia" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <div class="content">
+    <div class="content sanpham_gia">
         <div class="container">
             <div class="row">
-                <h1>Trang sản phẩm</h1>
+                
+                <section class="slide">
+                    <div class="search-site fright">
+                        <div class="container">
+                            <div class="row">
+                                <div class="search-wrap">
+                                    <asp:DropDownList ID="ddl_Gia" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddl_Gia_SelectedIndexChanged" >
+                                    </asp:DropDownList>
+                                    <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click" ><i class="fas fa-search"></i></asp:LinkButton>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                </section>
+                <h1>Trang sản phẩm</h1>
                 <div class="main-content">
                     <div class="row">
                         <div class="col-70">
@@ -65,48 +79,16 @@
                             <aside class="aside-site">
                                 <section class="section news">
                                     <div class="ema_title">
-                                        <a class="ema_txt" href="#">Tin tức                  <a class="ema_txt" href="#">Tin tức</a>
-                                    </div>
-                                    <div class="news-list-item">
+                                        <a class="ema_txt" href="#">Tin tức <a class="ema_txt" href="#">Tin tức</a> </div><div class="news-list-item">
                                         <div class="news-item">
-                                            <img src="image/system/xe4.jpg" />
-                                            <div class="news-text">
-                                                <h3 class="h3-title">Chọn Mazda6 2018 hay Toyota Corolla Altis 2018 trong tầm giá 850 triệu đồng</h3>
-                                                <span class="day">12/06/2018 20:57</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="news-item">
-                                            <img src="image/system/xe4.jpg" />
-                                            <div class="news-text">
-                                                <h3 class="h3-title">Chọn Mazda6 2018 hay Toyota Corolla Altis 2018 trong tầm giá 850 triệu đồng</h3>
-                                                <span class="day">12/06/2018 20:57</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="news-item">
-                                            <img src="image/system/xe4.jpg" />
-                                            <div class="news-text">
-                                                <h3 class="h3-title">Chọn Mazda6 2018 hay Toyota Corolla Altis 2018 trong tầm giá 850 triệu đồng</h3>
-                                                <span class="day">12/06/2018 20:57</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="news-item">
-                                            <img src="image/system/xe4.jpg" />
-                                            <div class="news-text">
-                                                <h3 class="h3-title">Chọn Mazda6 2018 hay Toyota Corolla Altis 2018 trong tầm giá 850 triệu đồng</h3>
-                                                <span class="day">12/06/2018 20:57</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                            </aside>
-                        </div>
-                    </div>
-                </div>
-
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:QLBanOToConnectionString %>" SelectCommand="SELECT [ID_Xe], [TenXe], [KhuVuc], [Anh], [Gia] FROM [Xe] WHERE (([Gia] &gt;= @Gia) AND ([Gia] &lt; @Gia2))">
+                                            <img src="image/system/xe4.jpg" /> <div class="news-text">
+                                                <h3 class="h3-title">Chọn Mazda6 2018 hay Toyota Corolla Altis 2018 trong tầm giá 850 triệu đồng</h3><span class="day">12/06/2018 20:57</span> </div></div><div class="news-item">
+                                            <img src="image/system/xe4.jpg" /> <div class="news-text">
+                                                <h3 class="h3-title">Chọn Mazda6 2018 hay Toyota Corolla Altis 2018 trong tầm giá 850 triệu đồng</h3><span class="day">12/06/2018 20:57</span> </div></div><div class="news-item">
+                                            <img src="image/system/xe4.jpg" /> <div class="news-text">
+                                                <h3 class="h3-title">Chọn Mazda6 2018 hay Toyota Corolla Altis 2018 trong tầm giá 850 triệu đồng</h3><span class="day">12/06/2018 20:57</span> </div></div><div class="news-item">
+                                            <img src="image/system/xe4.jpg" /> <div class="news-text">
+                                                <h3 class="h3-title">Chọn Mazda6 2018 hay Toyota Corolla Altis 2018 trong tầm giá 850 triệu đồng</h3><span class="day">12/06/2018 20:57</span> </div></div></div></section></aside></div></div></div><asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:QLBanOToConnectionString %>" SelectCommand="SELECT [ID_Xe], [TenXe], [KhuVuc], [Anh], [Gia] FROM [Xe] WHERE (([Gia] &gt;= @Gia) AND ([Gia] &lt; @Gia2))">
                     <SelectParameters>
                         <asp:QueryStringParameter DefaultValue="0" Name="Gia" QueryStringField="from_gia" Type="Double" />
                         <asp:QueryStringParameter DefaultValue="999999" Name="Gia2" QueryStringField="to_gia" Type="Double" />

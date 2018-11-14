@@ -10,29 +10,35 @@ public partial class WebBanXe_SanPham_Gia : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         title_gia.Text = "Xe ô tô "+ Request.Params["gia"];
-    }
 
-    private string convert_gia(int gia)
-    {
-        string str_gia = "";
-        string[] num_gia = gia.ToString().Split(' ');
-        string trieu = "";
-        string ty = "";
-        for(int i = 0 ; i < num_gia.Length - 1; i++)
+        if (!IsPostBack)
         {
-            if (i >= num_gia.Length-4)
-            {
-                ty += num_gia[i];
-            }else
-            {
-                trieu += num_gia[i];
-            }
+            ddl_Gia.Items.Add(new ListItem("-- Tìm kiếm theo giá --", "-1"));
+            ddl_Gia.Items.Add(new ListItem("Dưới 500 triệu", "0,500"));
+            ddl_Gia.Items.Add(new ListItem("500 triệu - 1 tỷ", "500,1000"));
+            ddl_Gia.Items.Add(new ListItem("1 tỷ - 3 tỷ", "1000,3000"));
+            ddl_Gia.Items.Add(new ListItem("3 tỷ - 5 tỷ", "3000,5000"));
+            ddl_Gia.Items.Add(new ListItem("Trên 5 tỷ", "5000,9999999999999999999"));
         }
-        str_gia = ty + " tỷ " + trieu + " triệu. ";
-        return str_gia;
     }
 
     protected void DataList1_SelectedIndexChanged(object sender, EventArgs e)
+    {
+ 
+    }
+
+    protected void LinkButton1_Click(object sender, EventArgs e)
+    {
+        string compare = ddl_Gia.SelectedValue;
+        string[] price = compare.Split(',');
+
+        if (price[0] != "-1")
+        {
+            Response.Redirect("~/WebBanXe/SanPham_Gia.aspx?from_gia=" + price[0] + "&to_gia=" + price[1] + "&gia=" + ddl_Gia.SelectedItem.Text);
+        }
+    }
+
+    protected void ddl_Gia_SelectedIndexChanged(object sender, EventArgs e)
     {
 
     }
