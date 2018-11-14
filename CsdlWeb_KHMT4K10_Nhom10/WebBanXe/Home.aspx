@@ -48,48 +48,55 @@
                 <div class="row">
                     <div class="col-70">
                         <section class="section product">
-                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:QLBanOToConnectionString %>" SelectCommand="SELECT [TenXe], [Gia], [Anh], [KhuVuc], [ID_Xe], [NgayDang] FROM [Xe] ORDER BY [NgayDang] DESC"></asp:SqlDataSource>
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:QLBanOToConnectionString %>" SelectCommand="SELECT [ID_Xe], [TenXe], [KhuVuc], [Anh], [Gia] FROM [Xe]" OnSelected="SqlDataSource1_Selected"></asp:SqlDataSource>
                             <div class="ema_title">
                                 <a class="ema_txt" href="#">Xe ô tô</a>
                             </div>
-
-
-
                             <div class="product-list">
                                 <div class="row" style="margin: 5px -5px;">
 
 
-                                    <div class="col-25">
-                                        <asp:LinkButton PostBackUrl="~/WebBanXe/SanPham.aspx" ID="LinkButton2" runat="server">
-                                            
-                                            <div class="product-item">
-                                                <img src="image/Nissan/Normal-2009-Nissan-Pathfinder-LE-1.jpg" />
-                                                <p class="item-title"><b>2018 Mazda 3 1.5 AT Sedan</b></p>
-                                                <label>Xe mới</label>
-                                                <span class="price">1 tỷ 19 triệu</span>
-                                                <p class="item-add">Tp Hồ Chí Minh</p>
-                                                <div class="numb-img">
-                                                    <i class="fas fa-camera"></i>
-                                                    <span>10</span>
+                                    <asp:DataList ID="DataList1" runat="server" DataKeyField="ID_Xe" Width="100%" RepeatColumns="4">
+                                        <ItemTemplate>
+                                            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# Eval("ID_Xe", "ChiTietSp.aspx?ID_Xe={0}") %>'>
+
+                                                <div class="product-item">
+                                                    <asp:Image ID="Image1" runat="server" ImageUrl='<%# Eval("Anh", "{0}") %>' />
+                                                    <p class="item-title">
+                                                        <b>
+                                                            <asp:Label ID="TenXeLabel" runat="server" Text='<%# Eval("TenXe") %>' /></b>
+                                                    </p>
+                                                    <label>Xe mới</label>
+                                                    <asp:Label CssClass="price" ID="GiaLabel" runat="server" Text='<%# Eval("Gia") %>' />
+                                                    <p class="item-add">
+                                                        <asp:Label ID="KhuVucLabel" runat="server" Text='<%# Eval("KhuVuc") %>' />
+                                                    </p>
+                                                    <div class="numb-img">
+                                                        <i class="fas fa-camera"></i>
+                                                        <span>10</span>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </asp:LinkButton>
+                                            </asp:HyperLink>
+                                        </ItemTemplate>
+                                    </asp:DataList>
+                                    <div class="site_paded">
+                                        <asp:Button ID="cmdPrev" runat="server" Text="<< " OnClick="cmdPrev_Click" />
+                                        <asp:Label ID="index_page" Text="" runat="server" />
+                                        <asp:Button ID="cmdNext" runat="server" Text=" >>" OnClick="cmdNext_Click" />
                                     </div>
 
-                        
                                 </div>
                             </div>
                             <div class="site-btn">
-                                <asp:LinkButton CssClass="btn btn-red" ID="LinkButton3" PostBackUrl="~/WebBanXe/SanPham.aspx" runat="server">
+                           <%--     <asp:LinkButton CssClass="btn btn-red" ID="LinkButton3" PostBackUrl="~/WebBanXe/SanPham.aspx" runat="server">
                                     Xem thêm xe
-                                </asp:LinkButton>
+                                </asp:LinkButton>--%>
                             </div>
                         </section>
                         <section class="section quangcao" style="text-align: center;">
                             <img style="width: 100%;" src="image/system/baner2.gif" />
                         </section>
-
-<%--                        <section class="section tuvan">
+                        <section class="section tuvan">
                             <div class="ema_title">
                                 <a class="ema_txt" href="#">Tư vấn</a>
                             </div>
@@ -141,6 +148,7 @@
                                 </div>
                             </div>
                         </section>
+
                         <section class="section compare">
                             <div class="ema_title">
                                 <a class="ema_txt" href="#">So sánh xe</a>
@@ -168,7 +176,7 @@
 
                         <section class="section quangcao" style="text-align: center;">
                             <img style="width: 100%;" src="image/system/baner2.gif" />
-                        </section>--%>
+                        </section>
                     </div>
                     <div class="col-30">
                         <aside class="aside-site">
@@ -184,7 +192,6 @@
                                             <span class="day">12/06/2018 20:57</span>
                                         </div>
                                     </div>
-
                                     <div class="news-item">
                                         <img src="image/system/xe4.jpg" />
                                         <div class="news-text">
@@ -192,7 +199,6 @@
                                             <span class="day">12/06/2018 20:57</span>
                                         </div>
                                     </div>
-
                                     <div class="news-item">
                                         <img src="image/system/xe4.jpg" />
                                         <div class="news-text">
@@ -200,7 +206,6 @@
                                             <span class="day">12/06/2018 20:57</span>
                                         </div>
                                     </div>
-
                                     <div class="news-item">
                                         <img src="image/system/xe4.jpg" />
                                         <div class="news-text">
@@ -208,11 +213,9 @@
                                             <span class="day">12/06/2018 20:57</span>
                                         </div>
                                     </div>
-
                                 </div>
                             </section>
-                            
-<%--                            <section class="section promotion">
+                                                        <section class="section promotion">
                                 <div class="ema_title">
                                     <a class="ema_txt" href="#">Khuyến mãi</a>
                                 </div>
@@ -241,15 +244,11 @@
                                     </div>
 
                                 </div>
-                            </section>--%>
-
+                            </section>
                         </aside>
                     </div>
                 </div>
             </div>
-
         </div>
-
     </main>
 </asp:Content>
-

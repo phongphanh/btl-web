@@ -661,3 +661,27 @@ table tr{
 .sanpham_gia .slide .search-site .search-wrap{
     margin-top:0;
 }
+
+.site_paded{
+    margin-top: 15px;
+    text-align: center;
+}
+.site_paded input,.site_paded span{
+    
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    border: none;
+    background-color: #008aee;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    color: #fff;
+    border-radius: 4px;
+}
+.site_paded input[type="submit" i]:disabled{
+     color: rgba(255,255,255,0.4);
+ }
+.site_paded span{
+    background-color: #189eff
+}

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -18,7 +19,11 @@ public partial class WebBanXe_Home : System.Web.UI.Page
             ddl_Gia.Items.Add(new ListItem("3 tỷ - 5 tỷ", "3000,5000"));
             ddl_Gia.Items.Add(new ListItem("Trên 5 tỷ", "5000,9999999999999999999"));
         }
-
+        if(Session["current_page"] == null)
+        {
+            Session["current_page"] = 0;
+        }
+        items();
     }
     protected void LinkButton1_Click(object sender, EventArgs e)
     {
@@ -34,5 +39,57 @@ public partial class WebBanXe_Home : System.Web.UI.Page
     protected void ddl_Gia_SelectedIndexChanged(object sender, EventArgs e)
     {
  
+    }
+
+    protected void cmdPrev_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            Session["current_page"]  =  (int)Session["current_page"] - 1;
+            items();
+        }
+        catch (Exception ex)
+        {
+            
+        }
+    }
+
+    protected void cmdNext_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            Session["current_page"] = (int)Session["current_page"] + 1;
+            items();
+        }
+        catch (Exception ex)
+        {
+            
+        }
+    }
+
+    protected void items()
+    {
+        SqlDataSource1.DataBind();
+        PagedDataSource objDs = new PagedDataSource();
+
+        DataView dv = (DataView)SqlDataSource1.Select( new DataSourceSelectArguments());
+        objDs.DataSource = dv;
+        objDs.PageSize = 20;
+        objDs.AllowPaging = true;
+        objDs.CurrentPageIndex = (int)Session["current_page"];
+        
+        index_page.Text = (objDs.CurrentPageIndex + 1).ToString() + "/" + objDs.PageCount; 
+
+        cmdPrev.Enabled = !objDs.IsFirstPage;
+        cmdNext.Enabled = !objDs.IsLastPage;
+        DataList1.DataSource = objDs;
+        DataList1.DataBind();
+
+    }
+
+
+    protected void SqlDataSource1_Selected(object sender, SqlDataSourceStatusEventArgs e)
+    {
+
     }
 }
