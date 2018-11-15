@@ -29,78 +29,44 @@
                                 </div>
                                 <div class="product-list">
                                     <div class="row" style="margin: 5px -5px;">
-                                        <asp:DataList ID="DataList1" runat="server" DataKeyField="ID_Xe" DataSourceID="SqlDataSource1" Width="100%" RepeatColumns="4" OnSelectedIndexChanged="DataList1_SelectedIndexChanged">
-                                            <ItemTemplate>
-                                                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# Eval("ID_Xe", "ChiTietSp.aspx?ID_Xe={0}") %>'>
+                                    <asp:DataList ID="DataList1" runat="server" DataKeyField="ID_Xe" Width="100%" RepeatColumns="4" DataSourceID="SqlDataSource1">
+                                        <ItemTemplate>
+                                            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# Eval("ID_Xe", "ChiTietSp.aspx?ID_Xe={0}") %>'>
 
-                                                    <div class="product-item">
-                                                        <asp:Image ID="Image1" runat="server" ImageUrl='<%# Eval("Anh", "{0}") %>' />
-                                                        <p class="item-title">
-                                                            <b>
-                                                                <asp:Label ID="TenXeLabel" runat="server" Text='<%# Eval("TenXe") %>' /></b>
-                                                        </p>
-                                                        <label>Xe mới</label>
-                                                        <asp:Label CssClass="price" ID="GiaLabel" runat="server" Text='<%# Eval("Gia") %>' />
-                                                        <p class="item-add">
-                                                            <asp:Label ID="KhuVucLabel" runat="server" Text='<%# Eval("KhuVuc") %>' />
-                                                        </p>
-                                                        <div class="numb-img">
-                                                            <i class="fas fa-camera"></i>
-                                                            <span>10</span>
-                                                        </div>
+                                                <div class="product-item">
+                                                    <asp:Image ID="Image1" runat="server" ImageUrl='<%# Eval("Anh", "{0}") %>' />
+                                                    <p class="item-title">
+                                                        <b>
+                                                            <asp:Label ID="TenXeLabel" runat="server" Text='<%# Eval("TenXe") %>' /></b>
+                                                    </p>
+                                                    <label>Xe mới</label>
+                                                    <asp:Label CssClass="price" ID="GiaLabel" runat="server" Text='<%# Eval("Gia") %>' />
+                                                    <p class="item-add">
+                                                        <asp:Label ID="KhuVucLabel" runat="server" Text='<%# Eval("KhuVuc") %>' />
+                                                    </p>
+                                                    <div class="numb-img">
+                                                        <i class="fas fa-camera"></i>
+                                                        <span>10</span>
                                                     </div>
-                                                </asp:HyperLink>
-                                            </ItemTemplate>
-                                        </asp:DataList>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                        <div class="col-30">
+                                                </div>
+                                            </asp:HyperLink></ItemTemplate></asp:DataList></div></div></section></div><div class="col-30">
                             <aside class="aside-site">
                                 <section class="section news">
                                     <div class="ema_title">
-                                        <a class="ema_txt" href="#">Tin tức <a class="ema_txt" href="#">Tin tức</a>
-                                    </div>
-                                    <div class="news-list-item">
+                                        <a class="ema_txt" href="#">Tin tức <a class="ema_txt" href="#">Tin tức</a> </div><div class="news-list-item">
                                         <div class="news-item">
-                                            <img src="image/system/xe4.jpg" />
-                                            <div class="news-text">
-                                                <h3 class="h3-title">Chọn Mazda6 2018 hay Toyota Corolla Altis 2018 trong tầm giá 850 triệu đồng</h3>
-                                                <span class="day">12/06/2018 20:57</span>
-                                            </div>
-                                        </div>
-                                        <div class="news-item">
-                                            <img src="image/system/xe4.jpg" />
-                                            <div class="news-text">
-                                                <h3 class="h3-title">Chọn Mazda6 2018 hay Toyota Corolla Altis 2018 trong tầm giá 850 triệu đồng</h3>
-                                                <span class="day">12/06/2018 20:57</span>
-                                            </div>
-                                        </div>
-                                        <div class="news-item">
-                                            <img src="image/system/xe4.jpg" />
-                                            <div class="news-text">
-                                                <h3 class="h3-title">Chọn Mazda6 2018 hay Toyota Corolla Altis 2018 trong tầm giá 850 triệu đồng</h3>
-                                                <span class="day">12/06/2018 20:57</span>
-                                            </div>
-                                        </div>
-                                        <div class="news-item">
-                                            <img src="image/system/xe4.jpg" />
-                                            <div class="news-text">
-                                                <h3 class="h3-title">Chọn Mazda6 2018 hay Toyota Corolla Altis 2018 trong tầm giá 850 triệu đồng</h3>
-                                                <span class="day">12/06/2018 20:57</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                            </aside>
-                        </div>
-                    </div>
-                </div>
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:QLBanOToConnectionString %>" SelectCommand="SELECT [ID_Xe], [TenXe], [KhuVuc], [Anh], [Gia] FROM [Xe] WHERE (([Gia] &gt;= @Gia) AND ([Gia] &lt; @Gia2))">
+                                            <img src="image/system/xe4.jpg" /> <div class="news-text">
+                                                <h3 class="h3-title">Chọn Mazda6 2018 hay Toyota Corolla Altis 2018 trong tầm giá 850 triệu đồng</h3><span class="day">12/06/2018 20:57</span> </div></div><div class="news-item">
+                                            <img src="image/system/xe4.jpg" /> <div class="news-text">
+                                                <h3 class="h3-title">Chọn Mazda6 2018 hay Toyota Corolla Altis 2018 trong tầm giá 850 triệu đồng</h3><span class="day">12/06/2018 20:57</span> </div></div><div class="news-item">
+                                            <img src="image/system/xe4.jpg" /> <div class="news-text">
+                                                <h3 class="h3-title">Chọn Mazda6 2018 hay Toyota Corolla Altis 2018 trong tầm giá 850 triệu đồng</h3><span class="day">12/06/2018 20:57</span> </div></div><div class="news-item">
+                                            <img src="image/system/xe4.jpg" /> <div class="news-text">
+                                                <h3 class="h3-title">Chọn Mazda6 2018 hay Toyota Corolla Altis 2018 trong tầm giá 850 triệu đồng</h3><span class="day">12/06/2018 20:57</span> </div></div></div></section></aside></div></div></div><asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:QLBanOToConnectionString %>" SelectCommand="SELECT [ID_Xe], [TenXe], [KhuVuc], [Anh], [Gia] FROM [Xe] WHERE (([Gia] &gt;= @Gia) AND ([Gia] &lt;= @Gia2) AND ([Da_Ban] LIKE '%' + @Da_Ban + '%'))">
                     <SelectParameters>
                         <asp:QueryStringParameter DefaultValue="0" Name="Gia" QueryStringField="from_gia" Type="Double" />
-                        <asp:QueryStringParameter DefaultValue="999999" Name="Gia2" QueryStringField="to_gia" Type="Double" />
+                        <asp:QueryStringParameter DefaultValue="50000" Name="Gia2" QueryStringField="to_gia" Type="Double" />
+                        <asp:Parameter DefaultValue="False" Name="Da_Ban" Type="String" />
                     </SelectParameters>
                 </asp:SqlDataSource>
             </div>

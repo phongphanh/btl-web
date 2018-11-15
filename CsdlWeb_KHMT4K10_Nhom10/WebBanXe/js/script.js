@@ -11,7 +11,6 @@
         var num_gia = gia.split('');
         var trieu = "";
         var ty = "";
-
         for(var i = 0 ; i < num_gia.length; i++)
         {
             if (i <= num_gia.length-4)
@@ -22,19 +21,17 @@
                 trieu += num_gia[i];
             }
         }
-        console.log(gia);
         if(ty != "")
-            str_gia = ty + " tỷ " + trieu + " triệu. ";
+            str_gia = ty + " tỷ " + trieu + " triệu";
         else
-            str_gia = trieu + " triệu. ";
+            str_gia = trieu + " triệu";
         return str_gia;
     }
     function convert() {
         $.each($(".price"), function (index, value) {
             var gia = convert_gia($(this).text());
-            $(this).text(gia)
-            }
-        );
+            $(this).text(gia);
+        });
     }
     convert();
 });
