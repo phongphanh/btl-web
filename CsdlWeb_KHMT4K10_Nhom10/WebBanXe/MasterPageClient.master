@@ -56,7 +56,7 @@
                                                 </li>
                                                 <li class="register-link">
                                                     <asp:LinkButton PostBackUrl="~/WebBanXe/DangKy.aspx" CausesValidation="false" ID="LinkButton22" runat="server">Tạo tài khoản</asp:LinkButton></li>
-                                                <li class="login-fb-link"><a href="#"><i class="fab fa-facebook-f"></i>Đăng nhập bằng Facebook</a></li>
+                                                <li class="login-fb-link"><a href="#"><i class="fab fa-facebook-f"></i> Đăng nhập bằng Facebook</a></li>
                                                 <li class="sp-guest">
                                                     <p>
                                                         Mọi vấn đề liên quan đến tài khoản, hãy gọi số <a href="tel:0906870699" title="Gọi đến: 0906 870 699">0906 870 699</a> để được hỗ trợ.
